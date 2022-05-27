@@ -379,7 +379,7 @@ footer span {
 /* --------- Contenido Responsive --------- */
 /* --------- (Tablet) --------- */
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .menuNavegacion {
     margin-top: 5rem;
   }
