@@ -425,6 +425,10 @@ footer span {
   .mainContact {
     margin: 0;
   }
+
+  .mainContact h1 {
+    font-size: 3rem;
+  }
 }
 
 /* --------- (Mobile) --------- */
@@ -449,15 +453,23 @@ footer span {
     padding: 0.2rem;
   }
 
+  .anchorSubMenuNavegacion {
+    font-size: 1rem;
+  }
+
   .parrafoQuiensoy {
-    margin: 7rem 5rem 0 5rem;
+    margin: 7rem 5rem 7rem 5rem;
+  }
+
+  .mainContact {
+    margin: 2rem;
+  }
+
+  .mainContact h1 {
+    font-size: 2.5rem;
   }
 
   footer div {
     margin-top: 0;
-  }
-
-  .anchorSubMenuNavegacion {
-    font-size: 1rem;
   }
 }
