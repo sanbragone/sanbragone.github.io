@@ -7,6 +7,7 @@
   border: 0;
   font-family: "Plus Jakarta Sans", sans-serif;
   text-decoration: none;
+  font-size: 62.5%;
 }
 
 /* --------- Logo y menu de navegacion (todas las paginas) --------- */
@@ -149,8 +150,8 @@ footer span {
 
 .fotoPortada {
   width: 100%;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 /* --------- aboutme.html --------- */
@@ -365,4 +366,40 @@ footer span {
 
 .mainFormSent img:hover {
   transform: scale(1.2);
+}
+
+/* --------- Contenido Responsive --------- */
+/* --------- Header (Tablet) --------- */
+
+@media (max-width: 768px) {
+  .menuNavegacion {
+    margin-top: 5rem;
+  }
+
+  header {
+    flex-direction: column;
+  }
+}
+
+/* --------- Header (Mobile) --------- */
+
+@media (max-width: 375px) {
+  header .logo {
+    flex-direction: column;
+  }
+
+  header .logo .nombre {
+      margin: 3rem 0rem 1rem 0rem;
+      text-align: center;
+      font-size: 3rem;
+  }
+
+  .menuNavegacion {
+    margin-top: 1rem;
+  }
+
+  .menuNavegacion .anchorMenuNavegacion {
+    font-size: 1.5rem;
+    padding: .2rem;
+  }
 }
