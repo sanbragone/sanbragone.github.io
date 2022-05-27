@@ -369,7 +369,7 @@ footer span {
 }
 
 /* --------- Contenido Responsive --------- */
-/* --------- Header (Tablet) --------- */
+/* --------- (Tablet) --------- */
 
 @media (max-width: 768px) {
   .menuNavegacion {
@@ -381,7 +381,7 @@ footer span {
   }
 }
 
-/* --------- Header (Mobile) --------- */
+/* --------- (Mobile) --------- */
 
 @media (max-width: 475px) {
   header .logo {
