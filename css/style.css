@@ -171,7 +171,7 @@ footer span {
 }
 
 .fotoQuiensoy {
-  margin: 100px;
+  margin: 10rem;
 }
 
 /* --------- Trips (nyc2019.html/mx2022.html/eu2018.html) --------- */
@@ -193,12 +193,12 @@ footer span {
   grid-template-rows: 20% 20% 20% 20% 20%;
   justify-content: center;
   align-content: center;
-  margin: 20px 100px 60px 100px;
+  margin: 2rem 10rem 6rem 10rem;
 }
 
 .mainTripsSectionEu img {
   width: 92%;
-  margin: 20px;
+  margin: 2rem;
   transition: all 0.5s;
   opacity: 1;
   height: 80%;
@@ -210,12 +210,12 @@ footer span {
   grid-template-rows: 25% 25% 25% 25%;
   justify-content: center;
   align-content: center;
-  margin: 20px 100px 60px 100px;
+  margin: 2rem 10rem 6rem 10rem;
 }
 
 .mainTripsSectionMx img {
   width: 92%;
-  margin: 20px;
+  margin: 2rem;
   transition: all 0.5s;
   opacity: 1;
 }
@@ -226,12 +226,12 @@ footer span {
   grid-template-rows: 25% 25% 25% 25%;
   justify-content: center;
   align-content: center;
-  margin: 20px 100px 60px 100px;
+  margin: 2rem 10rem 6rem 10rem;
 }
 
 .mainTripsSectionNyc img {
   width: 92%;
-  margin: 20px;
+  margin: 2rem;
   transition: all 0.5s;
   opacity: 1;
 }
@@ -257,11 +257,11 @@ footer span {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 70px;
+  margin-top: 7rem;
 }
 
 .mainProjects h1 {
-  margin: 20px;
+  margin: 2rem;
   font-size: 4rem;
 }
 
@@ -269,12 +269,12 @@ footer span {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 50% 50%;
-  margin: 10px;
+  margin: 1rem;
 }
 
 .mainProjects img {
   width: 90%;
-  margin: 20px;
+  margin: 2rem;
   transition: all 0.5s;
   opacity: 1;
 }
@@ -289,47 +289,47 @@ footer span {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 70px;
+  margin-top: 7rem;
 }
 
 .mainContact form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px;
+  border: .2rem;
   border-color: black;
 }
 
 .mainContact h1 {
-  margin: 40px;
+  margin: 4rem;
   transition: all 0.5s;
   font-size: 4rem;
 }
 
 .mainContact h1:hover {
-  font-size: 50px;
+  font-size: 5rem;
 }
 
 .formFormatInput {
-  border: 2px;
+  border: .2rem;
   border-style: ridge;
   border-color: black;
   width: 100%;
-  height: 30px;
-  margin: 5px;
-  padding-left: 5px;
+  height: 3rem;
+  margin: .5rem;
+  padding-left: .5rem;
   font-size: 1.5rem;
 }
 
 .formFormatTextarea {
-  border: 2px;
+  border: .2rem;
   border-style: ridge;
   border-color: black;
   width: 100%;
-  margin: 5px;
+  margin: .5rem;
   resize: none;
-  padding-left: 5px;
-  padding-top: 5px;
+  padding-left: .5rem;
+  padding-top: .5rem;
   font-size: 1.5rem;
 }
 
@@ -340,12 +340,12 @@ footer span {
 
 .mainBoton input {
   text-transform: uppercase;
-  margin: 20px 10px 40px 10px;
+  margin: 2rem 1rem 4rem 1rem;
   background-color: black;
   color: white;
-  padding: 10px;
+  padding: 1rem;
   font-weight: bold;
-  width: 100px;
+  width: 10rem;
   cursor: pointer;
   font-size: 1.5rem;
 }
@@ -401,7 +401,7 @@ footer span {
   }
 
   .mainTrips {
-    margin: 3rem 0 2rem 0;
+    margin: 5.5rem 0 2rem 0;
   }
 
   .mainTrips h1 {
