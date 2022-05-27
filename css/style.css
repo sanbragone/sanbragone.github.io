@@ -47,7 +47,7 @@ header .logo .nombre {
   font-size: 5rem;
   margin-left: 1rem;
   font-weight: bold;
-  text-shadow: .1rem .1rem rgba(124, 124, 124, 0.199);
+  text-shadow: 0.1rem 0.1rem rgba(124, 124, 124, 0.199);
 }
 
 header .logo .nombre div {
@@ -99,7 +99,7 @@ header .logo .nombre div {
   list-style: none;
   font-weight: bolder;
   text-transform: uppercase;
-  padding: .5rem 0 0 2rem;
+  padding: 0.5rem 0 0 2rem;
 }
 
 .menuNavegacion .anchorSubMenuNavegacion {
@@ -386,6 +386,31 @@ footer span {
 
   header {
     flex-direction: column;
+  }
+  .mainQuiensoy {
+    flex-direction: column;
+  }
+
+  .parrafoQuiensoy {
+    font-size: 2rem;
+    width: auto;
+  }
+
+  .fotoQuiensoy {
+    margin: 7rem 0 0 0;
+  }
+
+  .mainTrips {
+    margin: 3rem 0 2rem 0;
+  }
+
+  .mainTrips h1 {
+    margin: 0;
+    font-size: 4rem;
+  }
+
+  .mainContact {
+    margin: 0;
   }
 }
 
