@@ -452,4 +452,8 @@ footer span {
   footer div {
     margin-top: 0;
   }
+
+  .anchorSubMenuNavegacion {
+    font-size: 1rem;
+  }
 }
