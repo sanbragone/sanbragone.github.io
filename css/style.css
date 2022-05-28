@@ -153,56 +153,14 @@ footer span {
   margin-bottom: 5rem;
 }
 
-/* Clase dedicada para el index.html */
-.footerPortada {
-  position: flex;
-  margin-top: 100rem;
-}
-
 /* --------- Estilos por paginas --------- */
 /* --------- index.html --------- */
 .fotoPortada {
-  position: flex;
-  width: 100%;
   margin-top: 10rem;
-  margin-bottom: 10rem;
-}
-
-.imgPrincipal,
-.imgSecundaria {
-  width: 100%;
 }
 
 .fotoPortada img {
-  position: absolute;
-  left: 0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-@keyframes cf3FadeInOut {
-  0% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.fotoPortada img.imgSecundaria {
-  animation-name: cf3FadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 10s;
-  animation-direction: alternate;
+  width: 100%;
 }
 
 /* --------- aboutme.html --------- */
@@ -428,7 +386,6 @@ footer span {
 
 /* --------- Contenido Responsive --------- */
 /* --------- (Tablet) --------- */
-
 @media (max-width: 850px) {
   /* Header */
 
@@ -499,7 +456,6 @@ footer span {
 }
 
 /* --------- (Mobile) --------- */
-
 @media (max-width: 475px) {
   /* Header */
   header .logo {
@@ -523,7 +479,7 @@ footer span {
 
   .anchorMenuNavegacion {
     font-size: 1.2rem;
-    padding: 0.2rem;
+    padding: 0.1rem;
   }
 
   .anchorSubMenuNavegacion {
@@ -544,14 +500,14 @@ footer span {
   .mainQuiensoy img {
     margin-top: 5rem;
     margin-bottom: 0;
-    height: 40rem;
+    height: 35rem;
   }
 
   /* Trips */
   .mainTripsSectionEu {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 80%;
   }
 
   .mainTripsSectionEu img {
@@ -559,8 +515,8 @@ footer span {
   }
 
   .mainTripsSectionMx {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 45rem);
     margin: 2rem;
   }
 
@@ -569,17 +525,31 @@ footer span {
   }
 
   .mainTripsSectionNyc {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 25rem);
+    margin: 0.8rem;
   }
 
   .mainTripsSectionNyc img {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   .mainTrips h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+
+  /* projects.html */
+  .mainProjects section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .mainProjects img {
+    height: 20rem;
+  }
+
+  .mainProjects h1 {
+    font-size: 2rem;
   }
 
   /* contact.html */
@@ -588,11 +558,11 @@ footer span {
   }
 
   .mainContact h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .mainContact h1:hover {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .mainContact form textarea {
@@ -621,10 +591,6 @@ footer span {
 
   /* Footer */
   footer div {
-    margin-top: 0;
-  }
-
-  .footerPortada {
-    margin-top: 25rem;
+    margin-top: 2rem;
   }
 }
