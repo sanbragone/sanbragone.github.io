@@ -268,7 +268,8 @@ footer span {
 
 .mainProjects section {
   display: grid;
-  grid-template-columns: max-content max-content max-content;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 1rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -418,7 +419,7 @@ footer span {
 
   .mainTrips h1 {
     margin-bottom: 3rem;
-    margin-top: 0;
+    margin-top: 1rem;
     font-size: 4rem;
   }
 
@@ -549,51 +550,14 @@ footer span {
   }
 
   /* Trips */
-  .mainTripsSectionEu {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    width: 80%;
-  }
-
-  .mainTripsSectionEu img {
-    margin: 0;
-    transition: none;
-    opacity: 1;
-  }
-
-  .mainTripsSectionEu img:hover {
-    transform: none;
-    opacity: 1;
-  }
-
+  .mainTripsSectionEu,
+  .mainTripsSectionNyc,
   .mainTripsSectionMx {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    margin: 1rem;
-  }
-
-  .mainTripsSectionMx img {
-    margin: 1rem;
-  }
-
-  .mainTripsSectionMx img:hover {
-    transform: none;
-    opacity: 1;
-  }
-
-  .mainTripsSectionNyc {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    width: 90%;
   }
 
   .mainTripsSectionNyc img {
     margin-bottom: 0.5rem;
-  }
-
-  .mainTripsSectionNyc img:hover {
-    transform: none;
-    opacity: 1;
   }
 
   .mainTrips h1 {
@@ -602,18 +566,13 @@ footer span {
 
   /* projects.html */
   .mainProjects {
-    margin: 2rem 1rem 0 1rem;
+    margin-top: 2rem;
   }
 
   .mainProjects section {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     margin-top: 0;
-  }
-
-  .mainProjects img {
-    height: 90%;
   }
 
   .mainProjects h1 {
