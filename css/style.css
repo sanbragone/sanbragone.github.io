@@ -140,8 +140,8 @@ footer div {
 }
 
 footer img {
-  width: 32px;
-  height: 32px;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 footer img:hover {
@@ -187,11 +187,11 @@ footer span {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 70px;
+  margin-top: 7rem;
 }
 
 .mainTrips h1 {
-  margin: 50px;
+  margin: 5rem;
   font-size: 4rem;
 }
 
@@ -367,13 +367,13 @@ footer span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 170px;
+  margin-top: 17rem;
   font-size: 5rem;
 }
 
 .mainFormSent a {
   width: 15%;
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 
 .mainFormSent img {
