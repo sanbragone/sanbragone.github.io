@@ -516,6 +516,7 @@ footer span {
   /* Menu navegacion */
   .menuNavegacion {
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .menuNavegacion a {
@@ -560,6 +561,10 @@ footer span {
     margin-bottom: 0.5rem;
   }
 
+  .mainTrips {
+    margin: 2.5rem;
+  }
+
   .mainTrips h1 {
     font-size: 2rem;
   }
@@ -577,6 +582,7 @@ footer span {
 
   .mainProjects h1 {
     font-size: 2rem;
+    margin-top: 2rem;
   }
 
   .mainProjects img:hover {
