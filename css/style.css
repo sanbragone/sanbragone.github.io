@@ -22,7 +22,6 @@ header {
   flex-wrap: wrap;
 }
 
-/* Logo */
 header .logo {
   display: flex;
   flex-direction: row;
@@ -154,17 +153,23 @@ footer span {
   margin-bottom: 5rem;
 }
 
+/* Clase dedicada para el index.html */
+.footerPortada {
+  position: flex;
+  margin-top: 100rem;
+}
+
 /* --------- Estilos por paginas --------- */
 /* --------- index.html --------- */
-
 .fotoPortada {
-  position: relative;
+  position: flex;
   width: 100%;
   margin-top: 10rem;
   margin-bottom: 10rem;
 }
 
-.imgPrincipal, .imgSecundaria {
+.imgPrincipal,
+.imgSecundaria {
   width: 100%;
 }
 
@@ -425,14 +430,13 @@ footer span {
 /* --------- (Tablet) --------- */
 
 @media (max-width: 850px) {
-
   /* Header */
 
   header {
     flex-direction: column;
   }
 
-    /* Menu navegacion */
+  /* Menu navegacion */
 
   .menuNavegacion {
     margin-top: 5rem;
@@ -443,7 +447,7 @@ footer span {
     color: black;
   }
 
-    /* About me */
+  /* aboutme.html */
 
   .mainQuiensoy {
     flex-direction: column;
@@ -458,8 +462,7 @@ footer span {
     margin: 7rem 0 0 0;
   }
 
-  /* Trips */
-
+  /* trips */
   .mainTrips {
     margin: 5.5rem 0 2rem 0;
   }
@@ -469,8 +472,7 @@ footer span {
     font-size: 4rem;
   }
 
-  /* Contact */
-
+  /* contactme.html */
   .mainContact {
     margin: 0;
   }
@@ -479,6 +481,7 @@ footer span {
     font-size: 3rem;
   }
 
+  /* formsent.html */
   .mainFormSent {
     margin-top: 5rem;
   }
@@ -488,14 +491,17 @@ footer span {
     margin: 3rem 8rem 2rem 8rem;
     text-align: center;
   }
+
+  /* Footer */
+  .footerPortada {
+    margin-top: 60rem;
+  }
 }
 
 /* --------- (Mobile) --------- */
 
 @media (max-width: 475px) {
-
   /* Header */
-
   header .logo {
     flex-direction: column;
   }
@@ -507,9 +513,12 @@ footer span {
   }
 
   /* Menu navegacion */
-
   .menuNavegacion {
     margin-top: 1rem;
+  }
+
+  .menuNavegacion a {
+    margin-right: 1.5rem;
   }
 
   .anchorMenuNavegacion {
@@ -521,25 +530,76 @@ footer span {
     font-size: 1rem;
   }
 
-  /* About me */
+  /* index.html */
+  .fotoPortada {
+    display: flex;
+    margin-top: 5rem;
+  }
 
+  /* aboutme.html */
   .parrafoQuiensoy {
     margin: 7rem 5rem 7rem 5rem;
   }
 
-  /* Projects */
+  .mainQuiensoy img {
+    margin-top: 5rem;
+    margin-bottom: 0;
+    height: 40rem;
+  }
 
+  /* Trips */
+  .mainTripsSectionEu {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 2rem;
+  }
 
-  /* Contact */
+  .mainTripsSectionEu img {
+    margin: 0;
+  }
 
+  .mainTripsSectionMx {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 2rem;
+  }
+
+  .mainTripsSectionMx img {
+    margin: 1rem;
+  }
+
+  .mainTripsSectionNyc {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 2rem;
+  }
+
+  .mainTripsSectionNyc img {
+    margin-bottom: .5rem;
+  }
+
+  .mainTrips h1 {
+    font-size: 3rem;
+  }
+
+  /* contact.html */
   .mainContact {
-    margin: 5rem;
+    margin: 1rem 7rem;
   }
 
   .mainContact h1 {
     font-size: 2.5rem;
   }
 
+  .mainContact h1:hover {
+    font-size: 2.5rem;
+  }
+
+  .mainContact form textarea {
+    height: 20rem;
+  }
+
+  /* formsent.html */
   .mainFormSent {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -555,9 +615,16 @@ footer span {
     margin: 1rem;
   }
 
-  /* Footer */
+  .mainFormSent img {
+    width: 12rem;
+  }
 
+  /* Footer */
   footer div {
     margin-top: 0;
+  }
+
+  .footerPortada {
+    margin-top: 25rem;
   }
 }
