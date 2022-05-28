@@ -387,14 +387,13 @@ footer span {
 /* --------- Contenido Responsive --------- */
 /* --------- (Tablet) --------- */
 @media (max-width: 850px) {
+  
   /* Header */
-
   header {
     flex-direction: column;
   }
 
   /* Menu navegacion */
-
   .menuNavegacion {
     margin-top: 5rem;
   }
@@ -405,7 +404,6 @@ footer span {
   }
 
   /* aboutme.html */
-
   .mainQuiensoy {
     flex-direction: column;
   }
@@ -427,6 +425,27 @@ footer span {
   .mainTrips h1 {
     margin: 0;
     font-size: 4rem;
+  }
+
+  .mainTripsSectionEu img:hover {
+    transform: none;
+    opacity: 1;
+  }
+
+  .mainTripsSectionMx img:hover {
+    transform: none;
+    opacity: 1;
+  }
+
+  .mainTripsSectionNyc img:hover {
+    transform: none;
+    opacity: 1;
+  }
+
+  /* projects.html */
+  .mainProjects img:hover {
+    transform: none;
+    opacity: 1;
   }
 
   /* contactme.html */
@@ -574,6 +593,11 @@ footer span {
 
   .mainProjects h1 {
     font-size: 2rem;
+  }
+
+  .mainProjects img:hover {
+    transform: none;
+    opacity: 1;
   }
 
   /* contact.html */
