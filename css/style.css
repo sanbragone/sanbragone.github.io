@@ -425,6 +425,15 @@ footer span {
 /* --------- (Tablet) --------- */
 
 @media (max-width: 850px) {
+
+  /* Header */
+
+  header {
+    flex-direction: column;
+  }
+
+    /* Menu navegacion */
+
   .menuNavegacion {
     margin-top: 5rem;
   }
@@ -434,9 +443,7 @@ footer span {
     color: black;
   }
 
-  header {
-    flex-direction: column;
-  }
+    /* About me */
 
   .mainQuiensoy {
     flex-direction: column;
@@ -451,6 +458,8 @@ footer span {
     margin: 7rem 0 0 0;
   }
 
+  /* Trips */
+
   .mainTrips {
     margin: 5.5rem 0 2rem 0;
   }
@@ -459,6 +468,8 @@ footer span {
     margin: 0;
     font-size: 4rem;
   }
+
+  /* Contact */
 
   .mainContact {
     margin: 0;
@@ -482,6 +493,9 @@ footer span {
 /* --------- (Mobile) --------- */
 
 @media (max-width: 475px) {
+
+  /* Header */
+
   header .logo {
     flex-direction: column;
   }
@@ -491,6 +505,8 @@ footer span {
     text-align: center;
     font-size: 3rem;
   }
+
+  /* Menu navegacion */
 
   .menuNavegacion {
     margin-top: 1rem;
@@ -505,9 +521,16 @@ footer span {
     font-size: 1rem;
   }
 
+  /* About me */
+
   .parrafoQuiensoy {
     margin: 7rem 5rem 7rem 5rem;
   }
+
+  /* Projects */
+
+
+  /* Contact */
 
   .mainContact {
     margin: 5rem;
@@ -531,6 +554,8 @@ footer span {
   .mainFormSent a {
     margin: 1rem;
   }
+
+  /* Footer */
 
   footer div {
     margin-top: 0;
