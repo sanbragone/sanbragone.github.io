@@ -10,7 +10,7 @@
   font-size: 62.5%;
 }
 
-/* --------- Logo y menu de navegacion (todas las paginas) --------- */
+/* --------- Logo (todas las paginas) --------- */
 header {
   display: flex;
   justify-content: space-between;
@@ -67,7 +67,7 @@ header .logo .nombre div {
   }
 }
 
-/* --------- Menu de navegacion --------- */
+/* --------- Menu de navegacion (todas las paginas) --------- */
 .menuNavegacion {
   display: flex;
   flex-direction: row;
@@ -400,6 +400,7 @@ footer span {
   header {
     flex-direction: column;
   }
+
   .mainQuiensoy {
     flex-direction: column;
   }
