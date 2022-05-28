@@ -430,6 +430,16 @@ footer span {
   .mainContact h1 {
     font-size: 3rem;
   }
+
+  .mainFormSent {
+    margin-top: 5rem;
+  }
+
+  .mainFormSent h1 {
+    font-size: 3rem;
+    margin: 3rem 8rem 2rem 8rem;
+    text-align: center;
+  }
 }
 
 /* --------- (Mobile) --------- */
@@ -463,11 +473,26 @@ footer span {
   }
 
   .mainContact {
-    margin: 2rem;
+    margin: 5rem;
   }
 
   .mainContact h1 {
     font-size: 2.5rem;
+  }
+
+  .mainFormSent {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .mainFormSent h1 {
+    font-size: 2rem;
+    margin: 3rem 8rem 2rem 8rem;
+    text-align: center;
+  }
+
+  .mainFormSent a {
+    margin: 1rem;
   }
 
   footer div {
