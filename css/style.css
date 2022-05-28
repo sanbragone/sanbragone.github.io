@@ -380,7 +380,7 @@ footer span {
 
 /* --------- Contenido Responsive --------- */
 /* --------- (Tablet) --------- */
-@media (max-width: 850px) {
+@media screen and (max-width: 1024px) and (min-width: 650px) {
   /* Header */
   header {
     flex-direction: column;
@@ -501,7 +501,7 @@ footer span {
 }
 
 /* --------- (Mobile) --------- */
-@media (max-width: 475px) {
+@media screen and (max-width: 500px) {
   /* Header */
   header .logo {
     flex-direction: column;
