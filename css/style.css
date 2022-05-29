@@ -460,7 +460,7 @@ footer span {
 
   .mainProjects h1 {
     margin-bottom: 3rem;
-    margin-top: 0;
+    margin-top: 1rem;
     font-size: 4rem;
   }
 
@@ -501,7 +501,7 @@ footer span {
 }
 
 /* --------- (Mobile) --------- */
-@media screen and (max-width: 500px) {
+@media (max-width: 475px) {
   /* Header */
   header .logo {
     flex-direction: column;
@@ -509,15 +509,18 @@ footer span {
 
   header .logo .nombre {
     margin: 3rem 0rem 1rem 0rem;
-    text-align: center;
     font-size: 3rem;
+  }
+
+  header {
+    justify-content: center;
   }
 
   /* Menu navegacion */
   .menuNavegacion {
     margin-top: 1rem;
     margin-bottom: 1rem;
-  }
+}
 
   .menuNavegacion a {
     margin-right: 0.2rem;
@@ -526,6 +529,11 @@ footer span {
   .anchorMenuNavegacion {
     font-size: 1.2rem;
     padding: 0.1rem;
+  }
+
+  .anchorMenuNavegacion:hover {
+    background-color: white;
+    color: black;
   }
 
   .anchorSubMenuNavegacion {
@@ -542,6 +550,15 @@ footer span {
   /* aboutme.html */
   .parrafoQuiensoy {
     margin: 4rem 5rem 2rem 5rem;
+  }
+
+  .mainQuiensoy {
+    flex-direction: column;
+  }
+
+  .mainQuiensoy p {
+    width: auto;
+    font-size: 2rem;
   }
 
   .mainQuiensoy img {
