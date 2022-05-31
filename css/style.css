@@ -190,7 +190,7 @@ footer span {
   margin-top: 7rem;
 }
 
-.mainTrips h1 {
+.mainTrips span {
   margin: 5rem;
   font-size: 4rem;
 }
@@ -302,13 +302,13 @@ footer span {
   border-color: black;
 }
 
-.mainContact h1 {
+.mainContact span {
   margin: 4rem;
   transition: all 0.5s;
   font-size: 4rem;
 }
 
-.mainContact h1:hover {
+.mainContact span:hover {
   font-size: 5rem;
 }
 
@@ -417,7 +417,7 @@ footer span {
     margin: 5.5rem 0 2rem 0;
   }
 
-  .mainTrips h1 {
+  .mainTrips span {
     margin-bottom: 3rem;
     margin-top: 1rem;
     font-size: 4rem;
@@ -479,7 +479,7 @@ footer span {
     margin: 0;
   }
 
-  .mainContact h1 {
+  .mainContact span {
     font-size: 3rem;
   }
 
@@ -488,9 +488,10 @@ footer span {
     margin-top: 5rem;
   }
 
-  .mainFormSent h1 {
+  .mainFormSent span {
     font-size: 3rem;
     margin: 3rem 8rem 2rem 8rem;
+    font-weight: bolder ;
     text-align: center;
   }
 
@@ -582,7 +583,7 @@ footer span {
     margin: 3.5rem;
   }
 
-  .mainTrips h1 {
+  .mainTrips span {
     font-size: 2rem;
   }
 
@@ -612,12 +613,12 @@ footer span {
     margin: 1rem 7rem;
   }
 
-  .mainContact h1 {
+  .mainContact span {
     font-size: 1.5rem;
     margin: 2rem;
   }
 
-  .mainContact h1:hover {
+  .mainContact span:hover {
     font-size: 2rem;
   }
 
@@ -631,7 +632,7 @@ footer span {
     margin-bottom: 2rem;
   }
 
-  .mainFormSent h1 {
+  .mainFormSent span {
     font-size: 2rem;
     margin: 3rem 8rem 2rem 8rem;
     text-align: center;
