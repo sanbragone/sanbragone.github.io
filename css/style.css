@@ -261,7 +261,7 @@ footer span {
   margin-top: 7rem;
 }
 
-.mainProjects h1 {
+.mainProjects span {
   margin: 2rem;
   font-size: 4rem;
 }
@@ -598,7 +598,7 @@ footer span {
     margin-top: 0;
   }
 
-  .mainProjects h1 {
+  .mainProjects span {
     font-size: 2rem;
     margin-top: 2rem;
   }
