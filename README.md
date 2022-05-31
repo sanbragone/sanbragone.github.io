@@ -1,8 +1,7 @@
 # sanbragone.github.io
-Proyecto final para curso de Desarrollo Web en Coderhouse.
-Sitio de fotografia amateur de Santiago Bragone.
+<h2>Final project for Web Development course at Coderhouse. Amateur photography site by Santiago Bragone.</h2>
 
-Mockups
+<h3>Mockups</h3>
 
 <img width="961" alt="mockupIpad" src="https://user-images.githubusercontent.com/33030778/171070666-8b394e9e-f209-4377-ae44-debeecc6b8cb.png">
 
