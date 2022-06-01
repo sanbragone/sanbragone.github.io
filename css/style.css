@@ -54,6 +54,8 @@ header .logo .nombre div {
   animation: blinkingText 1s infinite;
 }
 
+/* Animacion para nombre de logo */
+
 @keyframes blinkingText {
   0% {
     opacity: 1;
@@ -82,7 +84,7 @@ header .logo .nombre div {
   font-weight: bolder;
   text-transform: uppercase;
   padding: 1rem;
-  transition: all 0.3s;
+  transition: 0.3s;
   display: block;
 }
 
@@ -205,7 +207,7 @@ footer span {
 
 .mainTripsSectionEu img {
   width: 100%;
-  transition: all 0.5s;
+  transition: 0.5s;
   opacity: 1;
 }
 
@@ -224,7 +226,7 @@ footer span {
 
 .mainTripsSectionMx img {
   width: 100%;
-  transition: all 0.5s;
+  transition: 0.5s;
   opacity: 1;
 }
 
@@ -243,7 +245,7 @@ footer span {
 
 .mainTripsSectionNyc img {
   width: 100%;
-  transition: all 0.5s;
+  transition: 0.5s;
   opacity: 1;
 }
 
@@ -277,7 +279,7 @@ footer span {
 
 .mainProjects img {
   width: 100%;
-  transition: all 0.5s;
+  transition: 0.5s;
   opacity: 1;
 }
 
@@ -304,7 +306,7 @@ footer span {
 
 .mainContact span {
   margin: 4rem;
-  transition: all 0.5s;
+  transition: 0.5s;
   font-size: 4rem;
 }
 
@@ -323,6 +325,11 @@ footer span {
   font-size: 1.5rem;
 }
 
+.formFormatInput:focus {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
 .formFormatTextarea {
   border: 0.2rem;
   border-style: ridge;
@@ -333,6 +340,11 @@ footer span {
   padding-left: 0.5rem;
   padding-top: 0.5rem;
   font-size: 1.5rem;
+}
+
+.formFormatTextarea:focus {
+  transform: scale(1.02);
+  transition: 0.3s;
 }
 
 .mainBoton {
@@ -353,7 +365,8 @@ footer span {
 }
 
 .mainBoton input:hover {
-  opacity: 0.8;
+  transform: translate(0.1rem, 0.1rem);
+  opacity: 0.9;
 }
 
 /* --------- formsent.html --------- */
@@ -371,7 +384,7 @@ footer span {
 }
 
 .mainFormSent img {
-  transition: all 0.3s;
+  transition: 0.3s;
 }
 
 .mainFormSent img:hover {
@@ -491,7 +504,7 @@ footer span {
   .mainFormSent span {
     font-size: 3rem;
     margin: 3rem 8rem 2rem 8rem;
-    font-weight: bolder ;
+    font-weight: bolder;
     text-align: center;
   }
 
@@ -521,7 +534,7 @@ footer span {
   .menuNavegacion {
     margin-top: 1rem;
     margin-bottom: 1rem;
-}
+  }
 
   .menuNavegacion a {
     margin-right: 0.2rem;
