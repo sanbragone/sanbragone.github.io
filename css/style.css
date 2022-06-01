@@ -51,7 +51,7 @@ header .logo .nombre {
 
 header .logo .nombre div {
   display: inline-block;
-  animation: blinkingText 1s infinite;
+  animation: blinkingText 2s infinite;
 }
 
 /* Animacion para nombre de logo */
