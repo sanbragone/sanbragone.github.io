@@ -577,6 +577,10 @@ footer span {
 
   .menuNavegacion a {
     margin-right: 0.2rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
   }
 
   .anchorMenuNavegacion {
