@@ -443,6 +443,14 @@ footer span {
     margin-top: 5rem;
   }
 
+  .menuNavegacion a {
+    background-color: black;
+    color: white;
+    margin-right: .5rem;
+    border-radius: .5rem;
+    padding: .5rem;
+  }
+
   .anchorMenuNavegacion:hover {
     background-color: white;
     color: black;
@@ -579,8 +587,8 @@ footer span {
     margin-right: 0.2rem;
     background-color: black;
     color: white;
-    border-radius: 5px;
-    padding: 2px;
+    border-radius: .5rem;
+    padding: .2rem;
   }
 
   .anchorMenuNavegacion {
