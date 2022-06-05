@@ -36,6 +36,7 @@ header .logo .sb {
   color: white;
   padding: 1.5rem;
   font-weight: bold;
+  transition: 0.2s;
 }
 
 header .logo .sb:hover {
@@ -51,10 +52,10 @@ header .logo .nombre {
 
 header .logo .nombre div {
   display: inline-block;
-  animation: blinkingText 2s infinite;
+  animation: blinkingText 1s infinite;
 }
 
-/* Animacion para nombre de logo */
+/* Animacion para nombre dentro del logo */
 
 @keyframes blinkingText {
   0% {
@@ -446,9 +447,9 @@ footer span {
   .menuNavegacion a {
     background-color: black;
     color: white;
-    margin-right: .5rem;
-    border-radius: .5rem;
-    padding: .5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
   }
 
   .anchorMenuNavegacion:hover {
@@ -587,8 +588,8 @@ footer span {
     margin-right: 0.2rem;
     background-color: black;
     color: white;
-    border-radius: .5rem;
-    padding: .2rem;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
   }
 
   .anchorMenuNavegacion {
