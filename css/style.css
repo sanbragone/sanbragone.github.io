@@ -385,9 +385,9 @@ footer span {
     padding: 0.5rem;
   }
 
-  .anchorMenuNavegacion:hover {
-    background-color: white;
-    color: black;
+  .menuNavegacion a:hover {
+    background-color: black;
+    color: white;
   }
 
   /* aboutme.html */
@@ -488,11 +488,6 @@ footer span {
   .anchorMenuNavegacion {
     font-size: 1.2rem;
     padding: 0.1rem;
-  }
-
-  .anchorMenuNavegacion:hover {
-    background-color: white;
-    color: black;
   }
 
   .anchorSubMenuNavegacion {
