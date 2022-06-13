@@ -248,63 +248,6 @@ footer span {
   font-size: 4rem;
 }
 
-.mainTripsSectionEu {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  margin: 1rem 1rem 7rem 1rem;
-  gap: 1rem;
-}
-
-.mainTripsSectionEu img {
-  width: 100%;
-  transition: 0.5s;
-  opacity: 1;
-}
-
-.mainTripsSectionEu img:hover {
-  transform: scale(1.02);
-  opacity: 0.7;
-}
-
-.mainTripsSectionMx {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-  margin: 1rem;
-}
-
-.mainTripsSectionMx img {
-  width: 100%;
-  transition: 0.5s;
-  opacity: 1;
-}
-
-.mainTripsSectionMx img:hover {
-  transform: scale(1.02);
-  opacity: 0.7;
-}
-
-.mainTripsSectionNyc {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-  margin: 1rem;
-}
-
-.mainTripsSectionNyc img {
-  width: 100%;
-  transition: 0.5s;
-  opacity: 1;
-}
-
-.mainTripsSectionNyc img:hover {
-  transform: scale(1.02);
-  opacity: 0.7;
-}
-
 /* --------- projects.html --------- */
 .mainProjects {
   display: flex;
@@ -474,36 +417,6 @@ footer span {
     font-size: 4rem;
   }
 
-  .mainTripsSectionEu {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-
-  .mainTripsSectionNyc {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-
-  .mainTripsSectionMx {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-
-  .mainTripsSectionEu img:hover {
-    transform: none;
-    opacity: 1;
-  }
-
-  .mainTripsSectionMx img:hover {
-    transform: none;
-    opacity: 1;
-  }
-
-  .mainTripsSectionNyc img:hover {
-    transform: none;
-    opacity: 1;
-  }
-
   /* projects.html */
   .mainProjects {
     margin: 5.5rem 0 2rem 0;
@@ -614,15 +527,6 @@ footer span {
   }
 
   /* Trips */
-  .mainTripsSectionEu,
-  .mainTripsSectionNyc,
-  .mainTripsSectionMx {
-    grid-template-columns: 1fr;
-  }
-
-  .mainTripsSectionNyc img {
-    margin-bottom: 0.5rem;
-  }
 
   .mainTrips {
     margin: 3.5rem;
