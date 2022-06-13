@@ -8,6 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="/img/icons/camera-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/gallery-grid.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="/css/style.css">
     <title>SB | Projects</title>
@@ -45,14 +49,43 @@
     <!-- Main -->
     <main class="mainProjects">
         <span>Bingo - My cat</span>
-        <section>
-            <img src="/img/projects/bingo/bingo1.JPG" alt="Photo of cat looking at the sky">
-            <img src="/img/projects/bingo/bingo2.JPG" alt="Photo of a cat looking at the camera">
-            <img src="/img/projects/bingo/bingo3.JPG" alt="Cat profile picture, full body">
-            <img src="/img/projects/bingo/bingo4.JPG" alt="Photo of upside down cat">
-            <img src="/img/projects/bingo/bingo5.JPG" alt="Photo of a cat peering from the side">
-            <img src="/img/projects/bingo/bingo6.jpg" alt="Photo of cat looking at nothing">
-        </section>
+        <!-- Galería con modal -->
+        <div class="container gallery-container">
+            <div class="tz-gallery">
+                <div class="row">
+                    <div class="col-sm-3 col-md-4">
+                        <a class="lightbox" href="/img/projects/bingo/bingo1_big.JPG">
+                            <img src="/img/projects/bingo/bingo1.JPG" alt="Photo of cat looking at the sky">
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-md-4">
+                        <a class="lightbox" href="/img/projects/bingo/bingo2_big.JPG">
+                            <img src="/img/projects/bingo/bingo2.JPG" alt="Photo of a cat looking at the camera">
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-md-4">
+                        <a class="lightbox" href="/img/projects/bingo/bingo3_big.JPG">
+                            <img src="/img/projects/bingo/bingo3.JPG" alt="Cat profile picture, full body">
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-md-4">
+                        <a class="lightbox" href="/img/projects/bingo/bingo4_big.JPG">
+                            <img src="/img/projects/bingo/bingo4.JPG" alt="Photo of upside down cat">
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-md-4">
+                        <a class="lightbox" href="/img/projects/bingo/bingo5_big.JPG">
+                            <img src="/img/projects/bingo/bingo5.JPG" alt="Photo of a cat peering from the side">
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-md-4">
+                        <a class="lightbox" href="/img/projects/bingo/bingo6_big.JPG">
+                            <img src="/img/projects/bingo/bingo6.JPG" alt="Photo of cat looking at nothing">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Footer -->
     <footer>
@@ -71,7 +104,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
 </body>
 
 </html>
