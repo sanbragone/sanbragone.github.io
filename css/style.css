@@ -64,9 +64,11 @@ header .logo .nombre div {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -129,7 +131,7 @@ header .logo .nombre div {
   color: white;
 }
 
-.menuNavegacion li:hover > ul {
+.menuNavegacion li:hover>ul {
   display: block;
 }
 
@@ -177,39 +179,49 @@ footer span {
   animation: fotoPortada 2s;
 }
 
-/* Animacion para foto portada */
+/* Animacion para fotos de portada */
 
 @keyframes fotoPortada {
   0% {
     opacity: 0;
   }
+
   10% {
     opacity: 0.1;
   }
+
   20% {
     opacity: 0.2;
   }
+
   30% {
     opacity: 0.3;
   }
+
   40% {
     opacity: 0.4;
   }
+
   50% {
     opacity: 0.5;
   }
+
   60% {
     opacity: 0.6;
   }
+
   70% {
     opacity: 0.7;
   }
+
   80% {
     opacity: 0.8;
   }
+
   90% {
     opacity: 0.9;
   }
+
   100% {
     opacity: 1;
   }
@@ -367,6 +379,7 @@ footer span {
 /* --------- Contenido Responsive --------- */
 /* --------- (Tablet) --------- */
 @media screen and (max-width: 1024px) and (min-width: 650px) {
+
   /* Header */
   header {
     flex-direction: column;
@@ -457,6 +470,7 @@ footer span {
 
 /* --------- (Mobile) --------- */
 @media (max-width: 550px) {
+
   /* Header */
   header .logo {
     flex-direction: column;
