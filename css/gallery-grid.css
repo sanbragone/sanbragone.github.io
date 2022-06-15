@@ -1,15 +1,3 @@
-.container.gallery-container {
-  color: #35373a;
-}
-
-.gallery-container p.page-description {
-  text-align: center;
-  max-width: 800px;
-  margin: 25px auto;
-  color: #888;
-  font-size: 18px;
-}
-
 .tz-gallery {
   padding: 40px;
 }
