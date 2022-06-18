@@ -1,15 +1,12 @@
-/* --------- Import de Variables --------- */
-@import "/scss/partials/variables";
-
-/* --------- Import de Partials --------- */
-@import "/scss/partials/base";
-@import "/scss/partials/header";
-@import "/scss/partials/footer";
-@import "/scss/partials/galleries";
-
-/* --------- Import de Sections --------- */
-@import "/scss/partials/sections/contactme";
-@import "/scss/partials/sections/formsent";
-@import "/scss/partials/sections/index";
-@import "/scss/partials/sections/projects";
-@import "/scss/partials/sections/trips";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap");
+@import './partials/base';
+@import './partials/header';
+@import './partials/footer';
+@import './partials/galleries';
+@import './partials/sections/contactme';
+@import './partials/sections/formsent';
+@import './partials/sections/index';
+@import './partials/sections/projects';
+@import './partials/sections/trips';
+@import './partials/sections/aboutme';
+@import './partials/responsive';

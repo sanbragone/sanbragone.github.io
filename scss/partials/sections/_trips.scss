@@ -1,0 +1,13 @@
+/* --------- Trips (nyc2019.html/mx2022.html/eu2018.html) --------- */
+
+.mainTrips {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7rem;
+  
+    span {
+      margin: 5rem;
+      font-size: 4rem;
+    }
+  }  

@@ -1,0 +1,13 @@
+/* --------- projects.html --------- */
+
+.mainProjects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7rem;
+  
+    span {
+      margin: 2rem;
+      font-size: 4rem;
+    }
+  }

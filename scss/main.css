@@ -1,0 +1,686 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap");
+
+/* --------- Formateo general sitio --------- */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 62.5%;
+}
+
+/* --------- Logo (todas las paginas) --------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header .logo a {
+  text-decoration: none;
+}
+
+header .logo .sb {
+  border-radius: 100%;
+  background-color: black;
+  font-size: 8rem;
+  color: white;
+  padding: 1.5rem;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+header .logo .sb:hover {
+  opacity: 0.8;
+}
+
+header .logo .nombre {
+  font-size: 5rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  text-shadow: 0.1rem 0.1rem rgba(124, 124, 124, 0.199);
+}
+
+header .logo .nombre div {
+  display: inline-block;
+  -webkit-animation: blinkingText 1s infinite;
+  animation: blinkingText 1s infinite;
+}
+
+/* Animacion para nombre dentro del logo */
+@-webkit-keyframes blinkingText {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blinkingText {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* --------- Menu de navegacion (todas las paginas) --------- */
+.menuNavegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.anchorMenuNavegacion {
+  font-size: 2rem;
+  color: black;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 1rem;
+  transition: 0.3s;
+  display: block;
+  text-decoration: none;
+}
+
+.anchorMenuNavegacion:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* --------- Submenu de navegacion "Trips" --------- */
+.menuNavegacion li ul {
+  display: none;
+  position: absolute;
+  list-style: none;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 0.5rem 0 0 2rem;
+}
+
+.anchorSubMenuNavegacion {
+  color: white;
+  background-color: black;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  border-radius: 0.2rem;
+  text-decoration: none;
+}
+
+.menuNavegacion li ul li {
+  margin: 0 0 0.2rem 0;
+}
+
+.anchorSubMenuNavegacion:hover {
+  font-weight: bolder;
+  color: white;
+}
+
+.menuNavegacion li:hover>ul {
+  display: block;
+}
+
+.menuNavegacion a {
+  text-decoration: none;
+}
+
+/* --------- Footer (todas las paginas) --------- */
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+footer img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+footer img:hover {
+  opacity: 0.8;
+}
+
+footer span {
+  text-align: center;
+  font-size: small;
+  margin-bottom: 5rem;
+}
+
+.tz-gallery {
+  padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+  width: 100%;
+  margin-bottom: 30px;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.tz-gallery .lightbox img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tz-gallery img {
+  border-radius: 4px;
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+}
+
+/* --------- contactme.html --------- */
+.mainContact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+
+.mainContact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.2rem;
+  border-color: black;
+}
+
+.mainContact span {
+  margin: 4rem;
+  transition: 0.5s;
+  font-size: 4rem;
+}
+
+.mainContact span:hover {
+  font-size: 5rem;
+}
+
+.formFormatInput {
+  border: 0.2rem;
+  border-style: ridge;
+  border-color: black;
+  width: 100%;
+  height: 3rem;
+  margin: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.formFormatInput:focus {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+.formFormatTextarea {
+  border: 0.2rem;
+  border-style: ridge;
+  border-color: black;
+  width: 100%;
+  margin: 0.5rem;
+  resize: none;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.formFormatTextarea:focus {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+.mainBoton {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainBoton input {
+  text-transform: uppercase;
+  margin: 2rem 1rem 4rem 1rem;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.mainBoton input:hover {
+  transform: translate(0.1rem, 0.1rem);
+  opacity: 0.9;
+}
+
+/* --------- formsent.html --------- */
+.mainFormSent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 17rem;
+  font-size: 5rem;
+}
+
+.mainFormSent a {
+  width: 15%;
+  margin-top: 5rem;
+}
+
+.mainFormSent img {
+  transition: 0.3s;
+}
+
+.mainFormSent img:hover {
+  transform: scale(1.2);
+}
+
+/* --------- index.html --------- */
+.fotoPortada {
+  margin-top: 10rem;
+}
+
+.fotoPortada img {
+  width: 100%;
+  -webkit-animation: fotoPortada 2s;
+  animation: fotoPortada 2s;
+}
+
+/* Animacion para fotos de portada */
+@-webkit-keyframes fotoPortada {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.1;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  30% {
+    opacity: 0.3;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fotoPortada {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.1;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  30% {
+    opacity: 0.3;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* --------- projects.html --------- */
+.mainProjects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+
+.mainProjects span {
+  margin: 2rem;
+  font-size: 4rem;
+}
+
+/* --------- Trips (nyc2019.html/mx2022.html/eu2018.html) --------- */
+.mainTrips {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+
+.mainTrips span {
+  margin: 5rem;
+  font-size: 4rem;
+}
+
+/* --------- aboutme.html --------- */
+.mainQuiensoy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.parrafoQuiensoy {
+  font-size: 3rem;
+  text-align: justify;
+  width: 80rem;
+  margin: 10rem;
+}
+
+.fotoQuiensoy {
+  margin: 10rem;
+  border-radius: 0.5rem;
+}
+
+/* --------- Contenido Responsive --------- */
+/* --------- (Tablet) --------- */
+@media screen and (max-width: 1024px) and (min-width: 650px) {
+
+  /* Header */
+  header {
+    flex-direction: column;
+  }
+
+  /* Menu navegacion */
+  .menuNavegacion {
+    margin-top: 5rem;
+  }
+
+  .menuNavegacion a {
+    background-color: black;
+    color: white;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .menuNavegacion a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  /* aboutme.html */
+  .mainQuiensoy {
+    flex-direction: column;
+  }
+
+  .parrafoQuiensoy {
+    font-size: 2rem;
+    width: auto;
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+  }
+
+  .fotoQuiensoy {
+    margin: 7rem 0 0 0;
+  }
+
+  /* trips */
+  .mainTrips {
+    margin: 5.5rem 0 2rem 0;
+  }
+
+  .mainTrips span {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    font-size: 4rem;
+  }
+
+  /* projects.html */
+  .mainProjects {
+    margin: 5.5rem 0 2rem 0;
+  }
+
+  .mainProjects h1 {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    font-size: 4rem;
+  }
+
+  /* contactme.html */
+  .mainContact {
+    margin: 0;
+  }
+
+  .mainContact span {
+    font-size: 3rem;
+  }
+
+  /* formsent.html */
+  .mainFormSent {
+    margin-top: 5rem;
+  }
+
+  .mainFormSent span {
+    font-size: 3rem;
+    margin: 3rem 8rem 2rem 8rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  /* Footer */
+  .footerPortada {
+    margin-top: 60rem;
+  }
+}
+
+/* --------- (Mobile) --------- */
+@media (max-width: 550px) {
+
+  /* Header */
+  header {
+    justify-content: center;
+  }
+
+  header .logo {
+    flex-direction: column;
+  }
+
+  header .logo .nombre {
+    margin: 3rem 0rem 1rem 0rem;
+    font-size: 3rem;
+  }
+
+  /* Menu navegacion */
+  .menuNavegacion {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .menuNavegacion a {
+    margin-right: 0.2rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+  }
+
+  .anchorMenuNavegacion {
+    font-size: 1.2rem;
+    padding: 0.1rem;
+  }
+
+  .anchorSubMenuNavegacion {
+    font-size: 1rem;
+  }
+
+  /* index.html */
+  .fotoPortada {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  /* aboutme.html */
+  .parrafoQuiensoy {
+    margin: 4rem 5rem 2rem 5rem;
+  }
+
+  .mainQuiensoy {
+    flex-direction: column;
+  }
+
+  .mainQuiensoy p {
+    width: auto;
+    font-size: 2rem;
+  }
+
+  .mainQuiensoy img {
+    margin-top: 5rem;
+    margin-bottom: 0;
+    height: 35rem;
+  }
+
+  /* Trips */
+  .mainTrips {
+    margin: 3.5rem;
+  }
+
+  .mainTrips span {
+    font-size: 2rem;
+  }
+
+  /* projects.html */
+  .mainProjects {
+    margin-top: 2rem;
+  }
+
+  .mainProjects span {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  /* contact.html */
+  .mainContact {
+    margin: 1rem 7rem;
+  }
+
+  .mainContact span {
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+
+  .mainContact span:hover {
+    font-size: 2rem;
+  }
+
+  .mainContact form textarea {
+    height: 20rem;
+  }
+
+  /* formsent.html */
+  .mainFormSent {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .mainFormSent span {
+    font-size: 2rem;
+    margin: 3rem 8rem 2rem 8rem;
+    text-align: center;
+  }
+
+  .mainFormSent a {
+    margin: 1rem;
+  }
+
+  /* Footer */
+  footer div {
+    margin-top: 2rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
