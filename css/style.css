@@ -55,25 +55,10 @@ header .logo .nombre {
 
 header .logo .nombre div {
   display: inline-block;
-  -webkit-animation: blinkingText 1s infinite;
   animation: blinkingText 1s infinite;
 }
 
 /* Animacion para nombre dentro del logo */
-@-webkit-keyframes blinkingText {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes blinkingText {
   0% {
     opacity: 1;
@@ -322,57 +307,10 @@ footer span {
 
 .fotoPortada img {
   width: 100%;
-  -webkit-animation: fotoPortada 2s;
   animation: fotoPortada 2s;
 }
 
 /* Animacion para fotos de portada */
-@-webkit-keyframes fotoPortada {
-  0% {
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 0.1;
-  }
-
-  20% {
-    opacity: 0.2;
-  }
-
-  30% {
-    opacity: 0.3;
-  }
-
-  40% {
-    opacity: 0.4;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  60% {
-    opacity: 0.6;
-  }
-
-  70% {
-    opacity: 0.7;
-  }
-
-  80% {
-    opacity: 0.8;
-  }
-
-  90% {
-    opacity: 0.9;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes fotoPortada {
   0% {
     opacity: 0;
@@ -682,5 +620,3 @@ footer span {
     margin-top: 2rem;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
