@@ -20,8 +20,9 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+# Agregados
 **node_modules
 readmeSass.txt
 mockupIpad.png
 mockupIphone.png
-package.json
+*.json
