@@ -21,5 +21,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 # Agregados
-**node_modules
+node_modules/
 readmeSass.txt
+*.json
+mockupIpad.png
+mockupIphone.png
