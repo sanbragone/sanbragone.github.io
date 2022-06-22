@@ -1,20 +1,18 @@
 /* --------- aboutme.html --------- */
 
 .mainQuiensoy {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .parrafoQuiensoy {
-    font-size: 3rem;
-    text-align: justify;
-    width: 80rem;
-    margin: 10rem;
-  }
-  
-  .fotoQuiensoy {
-    margin: 10rem;
-    border-radius: 0.5rem;
-  }
+  @include flex-row-center;
+  justify-content: center;
+}
+
+.parrafoQuiensoy {
+  font-size: 3rem;
+  text-align: justify;
+  width: 80rem;
+  margin: 10rem;
+}
+
+.fotoQuiensoy {
+  margin: 10rem;
+  border-radius: 0.5rem;
+}

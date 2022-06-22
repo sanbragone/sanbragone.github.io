@@ -1,81 +1,77 @@
 /* --------- contactme.html --------- */
 
 .mainContact {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 7rem;
-  
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border: 0.2rem;
-      border-color: black;
-    }
-  
-    span {
-      margin: 4rem;
-      transition: 0.5s;
-      font-size: 4rem;
-  
-      &:hover {
-        font-size: 5rem;
-      }
-    }
-  }
-  
-  .formFormatInput {
+  @include flex-column-center;
+  margin-top: 7rem;
+
+  form {
+    @include flex-column-center;
     border: 0.2rem;
-    border-style: ridge;
     border-color: black;
-    width: 100%;
-    height: 3rem;
-    margin: 0.5rem;
-    padding-left: 0.5rem;
+  }
+
+  span {
+    margin: 4rem;
+    transition: 0.5s;
+    font-size: 4rem;
+
+    &:hover {
+      font-size: 5rem;
+    }
+  }
+}
+
+.formFormatInput {
+  border: 0.2rem;
+  border-style: ridge;
+  border-color: black;
+  width: 100%;
+  height: 3rem;
+  margin: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+
+  &:focus {
+    transform: scale(1.02);
+    transition: 0.3s;
+  }
+}
+
+.formFormatTextarea {
+  border: 0.2rem;
+  border-style: ridge;
+  border-color: black;
+  width: 100%;
+  margin: 0.5rem;
+  resize: none;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+
+  &:focus {
+    transform: scale(1.02);
+    transition: 0.3s;
+  }
+}
+
+.mainBoton {
+  display: flex;
+  flex-direction: row;
+
+  input {
+    text-transform: uppercase;
+    margin: 2rem 1rem 4rem 1rem;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    width: 10rem;
+    cursor: pointer;
     font-size: 1.5rem;
-  
-    &:focus {
-      transform: scale(1.02);
-      transition: 0.3s;
+
+    &:hover {
+      transform: translate(0.1rem, 0.1rem);
+      opacity: 0.9;
     }
   }
-  
-  .formFormatTextarea {
-    border: 0.2rem;
-    border-style: ridge;
-    border-color: black;
-    width: 100%;
-    margin: 0.5rem;
-    resize: none;
-    padding-left: 0.5rem;
-    padding-top: 0.5rem;
-    font-size: 1.5rem;
-  
-    &:focus {
-      transform: scale(1.02);
-      transition: 0.3s;
-    }
-  }
-  
-  .mainBoton {
-    display: flex;
-    flex-direction: row;
-  
-    input {
-      text-transform: uppercase;
-      margin: 2rem 1rem 4rem 1rem;
-      background-color: black;
-      color: white;
-      padding: 1rem;
-      font-weight: bold;
-      width: 10rem;
-      cursor: pointer;
-      font-size: 1.5rem;
-  
-      &:hover {
-        transform: translate(0.1rem, 0.1rem);
-        opacity: 0.9;
-      }
-    }
-  }
+}
