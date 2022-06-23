@@ -87,6 +87,11 @@ header {
   }
 }
 
+.header__a--active {
+  background-color: black;
+  color: white;
+}
+
 /* --------- Submenu de navegacion "Trips" --------- */
 
 .menuNavegacion li ul {
