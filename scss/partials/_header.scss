@@ -19,7 +19,7 @@ header {
       border-radius: 100%;
       background-color: $colorDefault;
       font-size: 8rem;
-      color: white;
+      @include colorLetraHeader(white);
       padding: 1.5rem;
       font-weight: bold;
       transition: 0.2s;
@@ -81,7 +81,7 @@ header {
   &:hover {
     cursor: pointer;
     background-color: $colorDefault;
-    color: white;
+    @include colorLetraHeader(white);
     border-radius: 0.5rem;
     padding: 1rem;
   }
@@ -89,7 +89,7 @@ header {
 
 .header__a--active {
   background-color: $colorDefault;
-  color: white;
+  @include colorLetraHeader(white);
   border-radius: 0.5rem;
   padding: 1rem;
 }
@@ -106,7 +106,7 @@ header {
 }
 
 .anchorSubMenuNavegacion {
-  color: white;
+  @include colorLetraHeader(white);
   background-color: $colorDefault;
   font-weight: lighter;
   font-size: 1.5rem;
@@ -120,7 +120,7 @@ header {
 
 .anchorSubMenuNavegacion:hover {
   font-weight: bolder;
-  color: white;
+  @include colorLetraHeader(white);
 }
 
 .menuNavegacion {
