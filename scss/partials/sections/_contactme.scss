@@ -7,7 +7,7 @@
   form {
     @include flex-column-center;
     border: 0.2rem;
-    border-color: black;
+    border-color: $colorDefault;
   }
 
   span {
@@ -24,7 +24,7 @@
 .formFormatInput {
   border: 0.2rem;
   border-style: ridge;
-  border-color: black;
+  border-color: $colorDefault;
   width: 100%;
   height: 3rem;
   margin: 0.5rem;
@@ -40,7 +40,7 @@
 .formFormatTextarea {
   border: 0.2rem;
   border-style: ridge;
-  border-color: black;
+  border-color: $colorDefault;
   width: 100%;
   margin: 0.5rem;
   resize: none;
@@ -61,7 +61,7 @@
   input {
     text-transform: uppercase;
     margin: 2rem 1rem 4rem 1rem;
-    background-color: black;
+    background-color: $colorDefault;
     color: white;
     padding: 1rem;
     font-weight: bold;

@@ -17,7 +17,7 @@ header {
 
     .sb {
       border-radius: 100%;
-      background-color: black;
+      background-color: $colorDefault;
       font-size: 8rem;
       color: white;
       padding: 1.5rem;
@@ -70,7 +70,7 @@ header {
 
 .anchorMenuNavegacion {
   font-size: 2rem;
-  color: black;
+  color: $colorDefault;
   font-weight: bolder;
   text-transform: uppercase;
   padding: 1rem;
@@ -80,7 +80,7 @@ header {
 
   &:hover {
     cursor: pointer;
-    background-color: black;
+    background-color: $colorDefault;
     color: white;
     border-radius: 0.5rem;
     padding: 1rem;
@@ -88,7 +88,7 @@ header {
 }
 
 .header__a--active {
-  background-color: black;
+  background-color: $colorDefault;
   color: white;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -107,7 +107,7 @@ header {
 
 .anchorSubMenuNavegacion {
   color: white;
-  background-color: black;
+  background-color: $colorDefault;
   font-weight: lighter;
   font-size: 1.5rem;
   border-radius: 0.2rem;

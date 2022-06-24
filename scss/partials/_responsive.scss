@@ -13,14 +13,14 @@
       margin-top: 5rem;
   
       a {
-        background-color: black;
+        background-color: $colorDefault;
         color: white;
         margin-right: 0.5rem;
         border-radius: 0.5rem;
         padding: 0.5rem;
   
         &:hover {
-          background-color: black;
+          background-color: $colorDefault;
           color: white;
         }
       }
@@ -122,7 +122,7 @@
   
       a {
         margin-right: 0.2rem;
-        background-color: black;
+        background-color: $colorDefault;
         color: white;
         border-radius: 0.5rem;
         padding: 0.2rem;
