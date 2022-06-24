@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap");
+.parrafoQuiensoy {
+  font-size: 3rem;
+  text-align: justify;
+  width: 80rem;
+  margin: 10rem; }
+
 /* --------- Formateo general sitio --------- */
 * {
   margin: 0;
@@ -288,12 +294,6 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center; }
-
-.parrafoQuiensoy {
-  font-size: 3rem;
-  text-align: justify;
-  width: 80rem;
-  margin: 10rem; }
 
 .fotoQuiensoy {
   margin: 10rem;

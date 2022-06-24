@@ -6,10 +6,7 @@
 }
 
 .parrafoQuiensoy {
-  font-size: 3rem;
-  text-align: justify;
-  width: 80rem;
-  margin: 10rem;
+  @extend %estiloParrafo;
 }
 
 .fotoQuiensoy {
