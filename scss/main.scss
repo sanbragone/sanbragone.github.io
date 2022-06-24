@@ -1,15 +1,26 @@
+// Variables, extend y mixins
 @import './partials/extend';
 @import './partials/colors';
 @import './partials/fonts';
-@import './partials/base';
 @import './partials/mixins';
+
+// Formateo de sitio
+@import './partials/base';
+
+// Header y Footer
 @import './partials/header';
 @import './partials/footer';
+
+// Galerias
 @import './partials/galleries';
+
+// Secciones
 @import './partials/sections/contactme';
 @import './partials/sections/formsent';
 @import './partials/sections/index';
 @import './partials/sections/projects';
 @import './partials/sections/trips';
 @import './partials/sections/aboutme';
+
+// Contenido Responsive
 @import './partials/responsive';
