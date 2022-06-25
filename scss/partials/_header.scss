@@ -119,6 +119,7 @@ header {
 .anchorSubMenuNavegacion:hover {
   font-weight: bolder;
   @include colorLetraHeader(white);
+  text-decoration: none;
 }
 
 .menuNavegacion li:hover>ul {
