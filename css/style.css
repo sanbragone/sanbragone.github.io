@@ -110,6 +110,9 @@ header {
   font-weight: bolder;
   color: white; }
 
+.menuNavegacion li:hover > ul {
+  display: block; }
+
 /* --------- Footer (todas las paginas) --------- */
 footer {
   display: flex;
@@ -305,7 +308,7 @@ footer {
       color: white;
       margin-right: 0.5rem;
       border-radius: 0.5rem;
-      padding: 0.5rem;
+      padding: 0.1rem 1rem;
       text-decoration: none; }
   /* aboutme.html */
   .mainQuiensoy {
@@ -367,7 +370,7 @@ footer {
       background-color: black;
       color: white;
       border-radius: 0.5rem;
-      padding: 0.2rem;
+      padding: 0.1rem 1rem;
       text-decoration: none; }
   .anchorMenuNavegacion {
     font-size: 1.2rem;

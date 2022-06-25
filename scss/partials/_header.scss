@@ -120,3 +120,7 @@ header {
   font-weight: bolder;
   @include colorLetraHeader(white);
 }
+
+.menuNavegacion li:hover>ul {
+  display: block;
+}
