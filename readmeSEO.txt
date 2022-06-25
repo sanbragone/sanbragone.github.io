@@ -1,4 +1,4 @@
-<b>Modifaciones/ítems SEO:</b>
+<strong>Modifaciones/ítems SEO:</strong>
 
 - Título <h1> en todos los HTML (parte del logo).
 - Reemplazo de <span> por <h2> en las secciones que lo tenian.
