@@ -8,6 +8,8 @@
 - Mejora de estructura en general:
     _Carpeta SCSS con "partials" y "sections".
     _Carpeta CSS con su archivo correspondiente.
+    _Carpeta de imágenes dividida en subcarpetas para organizasr el contenido de cada sección.
+    _Carpetas ignoradas (en .gitignore) para que no sean visibles en GitHub.
 - Header conteniendo logo y barra de navegacion.
 
 
