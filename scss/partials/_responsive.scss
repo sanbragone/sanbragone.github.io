@@ -1,232 +1,229 @@
 /* --------- Contenido Responsive --------- */
 /* --------- (Tablet) --------- */
 @media screen and (max-width: 1024px) and (min-width: 650px) {
-    /* Header */
-  
-    header {
-      flex-direction: column;
-    }
-  
-    /* Menu navegacion */
-  
-    .menuNavegacion {
-      margin-top: 5rem;
-  
-      a {
-        background-color: $colorDefault;
-        color: white;
-        margin-right: 0.5rem;
-        border-radius: 0.5rem;
-        padding: 0.5rem;
-  
-        &:hover {
-          background-color: $colorDefault;
-          color: white;
-        }
-      }
-    }
-  
-    /* aboutme.html */
-  
-    .mainQuiensoy {
-      flex-direction: column;
-    }
-  
-    .parrafoQuiensoy {
-      font-size: 2rem;
-      width: auto;
-      margin-bottom: 2rem;
-      margin-top: 6rem;
-    }
-  
-    .fotoQuiensoy {
-      margin: 7rem 0 0 0;
-    }
-  
-    /* trips */
-  
-    .mainTrips {
-      margin: 5.5rem 0 2rem 0;
-  
-      span {
-        margin-bottom: 3rem;
-        margin-top: 1rem;
-        font-size: 4rem;
-      }
-    }
-  
-    /* projects.html */
-  
-    .mainProjects {
-      margin: 5.5rem 0 2rem 0;
-  
-      h1 {
-        margin-bottom: 3rem;
-        margin-top: 1rem;
-        font-size: 4rem;
-      }
-    }
-  
-    /* contactme.html */
-  
-    .mainContact {
-      margin: 0;
-  
-      span {
-        font-size: 3rem;
-      }
-    }
-  
-    /* formsent.html */
-  
-    .mainFormSent {
-      margin-top: 5rem;
-  
-      span {
-        font-size: 3rem;
-        margin: 3rem 8rem 2rem 8rem;
-        font-weight: bolder;
-        text-align: center;
-      }
-    }
-  
-    /* Footer */
-  
-    .footerPortada {
-      margin-top: 60rem;
+  /* Header */
+
+  header {
+    flex-direction: column;
+  }
+
+  /* Menu navegacion */
+
+  .menuNavegacion {
+    margin-top: 5rem;
+
+    a {
+      background-color: $colorDefault;
+      color: white;
+      margin-right: 0.5rem;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      text-decoration: none;
     }
   }
-  
-  /* --------- (Mobile) --------- */
-  @media (max-width: 550px) {
-    /* Header */
-  
-    header {
-      .logo {
-        flex-direction: column;
-  
-        .nombre {
-          margin: 3rem 0rem 1rem 0rem;
-          font-size: 3rem;
-        }
-      }
-  
-      justify-content: center;
-    }
-  
-    /* Menu navegacion */
-  
-    .menuNavegacion {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-  
-      a {
-        margin-right: 0.2rem;
-        background-color: $colorDefault;
-        color: white;
-        border-radius: 0.5rem;
-        padding: 0.2rem;
-      }
-    }
-  
-    .anchorMenuNavegacion {
-      font-size: 1.2rem;
-      padding: 0.1rem;
-    }
-  
-    .anchorSubMenuNavegacion {
-      font-size: 1rem;
-    }
-  
-    /* index.html */
-  
-    .fotoPortada {
-      display: flex;
-      margin-top: 5rem;
+
+  /* aboutme.html */
+
+  .mainQuiensoy {
+    flex-direction: column;
+  }
+
+  .parrafoQuiensoy {
+    font-size: 2rem;
+    width: auto;
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+  }
+
+  .fotoQuiensoy {
+    margin: 7rem 0 0 0;
+  }
+
+  /* trips */
+
+  .mainTrips {
+    margin: 5.5rem 0 2rem 0;
+
+    span {
       margin-bottom: 3rem;
+      margin-top: 1rem;
+      font-size: 4rem;
     }
-  
-    /* aboutme.html */
-  
-    .parrafoQuiensoy {
-      margin: 4rem 5rem 2rem 5rem;
+  }
+
+  /* projects.html */
+
+  .mainProjects {
+    margin: 5.5rem 0 2rem 0;
+
+    h1 {
+      margin-bottom: 3rem;
+      margin-top: 1rem;
+      font-size: 4rem;
     }
-  
-    .mainQuiensoy {
+  }
+
+  /* contactme.html */
+
+  .mainContact {
+    margin: 0;
+
+    span {
+      font-size: 3rem;
+    }
+  }
+
+  /* formsent.html */
+
+  .mainFormSent {
+    margin-top: 5rem;
+
+    span {
+      font-size: 3rem;
+      margin: 3rem 8rem 2rem 8rem;
+      font-weight: bolder;
+      text-align: center;
+    }
+  }
+
+  /* Footer */
+
+  .footerPortada {
+    margin-top: 60rem;
+  }
+}
+
+/* --------- (Mobile) --------- */
+@media (max-width: 550px) {
+  /* Header */
+
+  header {
+    .logo {
       flex-direction: column;
-  
-      p {
-        width: auto;
-        font-size: 2rem;
-      }
-  
-      img {
-        margin-top: 5rem;
-        margin-bottom: 0;
-        height: 35rem;
+
+      .nombre {
+        margin: 3rem 0rem 1rem 0rem;
+        font-size: 3rem;
       }
     }
-  
-    /* Trips */
-  
-    .mainTrips {
-      margin: 3.5rem;
-  
-      span {
-        font-size: 2rem;
-      }
+
+    justify-content: center;
+  }
+
+  /* Menu navegacion */
+
+  .menuNavegacion {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    a {
+      margin-right: 0.2rem;
+      background-color: $colorDefault;
+      color: white;
+      border-radius: 0.5rem;
+      padding: 0.2rem;
+      text-decoration: none;
     }
-  
-    /* projects.html */
-  
-    .mainProjects {
-      margin-top: 2rem;
-  
-      span {
-        font-size: 2rem;
-        margin-top: 2rem;
-      }
+  }
+
+  .anchorMenuNavegacion {
+    font-size: 1.2rem;
+    padding: 0.1rem;
+  }
+
+  .anchorSubMenuNavegacion {
+    font-size: 1rem;
+  }
+
+  /* index.html */
+
+  .fotoPortada {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  /* aboutme.html */
+
+  .parrafoQuiensoy {
+    margin: 4rem 5rem 2rem 5rem;
+  }
+
+  .mainQuiensoy {
+    flex-direction: column;
+
+    p {
+      width: auto;
+      font-size: 2rem;
     }
-  
-    /* contact.html */
-  
-    .mainContact {
-      margin: 1rem 7rem;
-  
-      span {
-        font-size: 1.5rem;
-        margin: 2rem;
-  
-        &:hover {
-          font-size: 2rem;
-        }
-      }
-  
-      form textarea {
-        height: 20rem;
-      }
+
+    img {
+      margin-top: 5rem;
+      margin-bottom: 0;
+      height: 35rem;
     }
-  
-    /* formsent.html */
-  
-    .mainFormSent {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-  
-      span {
-        font-size: 2rem;
-        margin: 3rem 8rem 2rem 8rem;
-        text-align: center;
-      }
-  
-      a {
-        margin: 1rem;
-      }
+  }
+
+  /* Trips */
+
+  .mainTrips {
+    margin: 3.5rem;
+
+    span {
+      font-size: 2rem;
     }
-  
-    /* Footer */
-  
-    footer div {
+  }
+
+  /* projects.html */
+
+  .mainProjects {
+    margin-top: 2rem;
+
+    span {
+      font-size: 2rem;
       margin-top: 2rem;
     }
   }
+
+  /* contact.html */
+
+  .mainContact {
+    margin: 1rem 7rem;
+
+    span {
+      font-size: 1.5rem;
+      margin: 2rem;
+
+      &:hover {
+        font-size: 2rem;
+      }
+    }
+
+    form textarea {
+      height: 20rem;
+    }
+  }
+
+  /* formsent.html */
+
+  .mainFormSent {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    span {
+      font-size: 2rem;
+      margin: 3rem 8rem 2rem 8rem;
+      text-align: center;
+    }
+
+    a {
+      margin: 1rem;
+    }
+  }
+
+  /* Footer */
+
+  footer div {
+    margin-top: 2rem;
+  }
+}
