@@ -27,15 +27,14 @@ header {
   font-weight: bolder;
   text-transform: uppercase;
   padding: 0.1rem 1rem;
-  transition: 0.3s;
   display: block;
   text-decoration: none;
 
   &:hover {
     cursor: pointer;
-    background-color: $colorDefault;
-    @include colorLetraHeader(white);
-    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.2rem;
     padding: 0.1rem 1rem;
     text-decoration: none;
   }
@@ -59,7 +58,7 @@ header {
 .anchorSubMenuNavegacion {
   @include colorLetraHeader(white);
   background-color: $colorDefault;
-  font-weight: lighter;
+  font-weight: bold;
   font-size: 1.5rem;
   border-radius: 0.2rem;
   text-decoration: none;
@@ -70,9 +69,14 @@ header {
 }
 
 .anchorSubMenuNavegacion:hover {
-  font-weight: bolder;
   @include colorLetraHeader(white);
   text-decoration: none;
+  color: black;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.2rem;
+  padding: 0 0.1rem;
 }
 
 .menuNavegacion li:hover > ul {
