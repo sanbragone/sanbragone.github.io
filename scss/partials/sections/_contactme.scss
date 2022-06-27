@@ -10,10 +10,14 @@
     border-color: $colorDefault;
   }
 
-  h2 {
+  h1 {
     margin: 4rem;
     transition: 0.5s;
     font-size: 4rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
 
     &:hover {
       font-size: 5rem;

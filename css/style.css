@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron&family=Plus+Jakarta+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Plus+Jakarta+Sans:wght@300&display=swap");
 .parrafoQuiensoy {
   font-size: 3rem;
   text-align: justify;
@@ -11,10 +10,9 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 62.5%; }
 
-/* --------- Logo (todas las paginas) --------- */
 header {
   display: flex;
   flex-direction: row;
@@ -23,40 +21,10 @@ header {
   margin-top: 4rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  flex-wrap: wrap; }
-  header .logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-    header .logo a {
-      text-decoration: none; }
-    header .logo .sb {
-      border-radius: 100%;
-      background-color: black;
-      font-size: 8rem;
-      color: white;
-      padding: 1.5rem;
-      transition: 0.2s;
-      font-family: "Monoton", cursive; }
-      header .logo .sb:hover {
-        opacity: 0.8; }
-    header .logo .nombre {
-      font-size: 5rem;
-      margin-left: 1rem;
-      font-weight: bold;
-      text-shadow: 0.1rem 0.1rem rgba(124, 124, 124, 0.199); }
-      header .logo .nombre div {
-        display: inline-block;
-        animation: blinkingText 1s infinite; }
-
-/* Animacion para nombre dentro del logo */
-@keyframes blinkingText {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+  flex-wrap: wrap;
+  /* --------- Logo (todas las paginas) --------- */ }
+  header .logo img {
+    margin-left: 5rem; }
 
 /* --------- Menu de navegacion (todas las paginas) --------- */
 .menuNavegacion {
@@ -157,9 +125,19 @@ footer {
 /* --------- aboutme.html --------- */
 .mainQuiensoy {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center; }
+  .mainQuiensoy h1 {
+    margin: 5rem;
+    font-size: 4rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem; }
+  .mainQuiensoy div {
+    display: flex;
+    flex-direction: row; }
 
 .fotoQuiensoy {
   margin: 10rem;
@@ -177,11 +155,15 @@ footer {
     align-items: center;
     border: 0.2rem;
     border-color: black; }
-  .mainContact h2 {
+  .mainContact h1 {
     margin: 4rem;
     transition: 0.5s;
-    font-size: 4rem; }
-    .mainContact h2:hover {
+    font-size: 4rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem; }
+    .mainContact h1:hover {
       font-size: 5rem; }
 
 .formFormatInput {
@@ -281,9 +263,13 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 7rem; }
-  .mainProjects h2 {
+  .mainProjects h1 {
     margin: 2rem;
-    font-size: 4rem; }
+    font-size: 4rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem; }
 
 /* --------- Trips (nyc2019.html/mx2022.html/eu2018.html) --------- */
 .mainTrips {
@@ -291,9 +277,13 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 7rem; }
-  .mainTrips h2 {
+  .mainTrips h1 {
     margin: 5rem;
-    font-size: 4rem; }
+    font-size: 4rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem; }
 
 /* --------- Contenido Responsive --------- */
 /* --------- (Tablet) --------- */
@@ -301,9 +291,14 @@ footer {
   /* Header */
   header {
     flex-direction: column; }
+    header .logo {
+      margin: 0; }
+      header .logo img {
+        margin: 0; }
   /* Menu navegacion */
   .menuNavegacion {
-    margin-top: 5rem; }
+    margin-top: 5rem;
+    padding: 0; }
     .menuNavegacion a {
       background-color: black;
       color: white;
@@ -314,17 +309,22 @@ footer {
   /* aboutme.html */
   .mainQuiensoy {
     flex-direction: column; }
+    .mainQuiensoy div {
+      flex-direction: column; }
+    .mainQuiensoy h1 {
+      margin-top: 7rem; }
+  .fotoQuiensoy {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
   .parrafoQuiensoy {
     font-size: 2rem;
     width: auto;
     margin-bottom: 2rem;
     margin-top: 6rem; }
-  .fotoQuiensoy {
-    margin: 7rem 0 0 0; }
   /* trips */
   .mainTrips {
     margin: 5.5rem 0 2rem 0; }
-    .mainTrips h2 {
+    .mainTrips h1 {
       margin-bottom: 3rem;
       margin-top: 1rem;
       font-size: 4rem; }
@@ -338,12 +338,12 @@ footer {
   /* contactme.html */
   .mainContact {
     margin: 0; }
-    .mainContact h2 {
+    .mainContact h1 {
       font-size: 3rem; }
   /* formsent.html */
   .mainFormSent {
     margin-top: 5rem; }
-    .mainFormSent h2 {
+    .mainFormSent h1 {
       font-size: 3rem;
       margin: 3rem 8rem 2rem 8rem;
       font-weight: bolder;
@@ -360,15 +360,13 @@ footer {
   /* Header */
   header {
     justify-content: center; }
-    header .logo {
-      flex-direction: column; }
-      header .logo .nombre {
-        margin: 3rem 0rem 1rem 0rem;
-        font-size: 3rem; }
+    header .logo img {
+      margin: 0; }
   /* Menu navegacion */
   .menuNavegacion {
-    margin-top: 1rem;
-    margin-bottom: 1rem; }
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding: 0; }
     .menuNavegacion a {
       margin-right: 0.2rem;
       background-color: black;
@@ -404,23 +402,23 @@ footer {
   /* Trips */
   .mainTrips {
     margin: 3.5rem; }
-    .mainTrips h2 {
+    .mainTrips h1 {
       font-size: 2rem;
       margin-top: 1rem;
       margin-bottom: 2rem; }
   /* projects.html */
   .mainProjects {
     margin-top: 2rem; }
-    .mainProjects h2 {
+    .mainProjects h1 {
       font-size: 2rem;
       margin-top: 2rem; }
   /* contact.html */
   .mainContact {
     margin: 1rem 7rem; }
-    .mainContact h2 {
+    .mainContact h1 {
       font-size: 2rem;
       margin: 2rem; }
-      .mainContact h2:hover {
+      .mainContact h1:hover {
         font-size: 2.5rem; }
     .mainContact form textarea {
       height: 20rem; }
@@ -428,7 +426,7 @@ footer {
   .mainFormSent {
     margin-top: 2rem;
     margin-bottom: 2rem; }
-    .mainFormSent h2 {
+    .mainFormSent h1 {
       font-size: 2rem;
       margin: 3rem 8rem 2rem 8rem;
       text-align: center; }

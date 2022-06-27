@@ -5,12 +5,21 @@
 
   header {
     flex-direction: column;
+
+    .logo {
+      margin: 0;
+
+      img {
+        margin: 0;
+      }
+    }
   }
 
   /* Menu navegacion */
 
   .menuNavegacion {
     margin-top: 5rem;
+    padding: 0;
 
     a {
       background-color: $colorDefault;
@@ -26,6 +35,19 @@
 
   .mainQuiensoy {
     flex-direction: column;
+
+    div {
+      flex-direction: column;
+    }
+
+    h1 {
+      margin-top: 7rem;
+    }
+  }
+
+  .fotoQuiensoy {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .parrafoQuiensoy {
@@ -35,16 +57,12 @@
     margin-top: 6rem;
   }
 
-  .fotoQuiensoy {
-    margin: 7rem 0 0 0;
-  }
-
   /* trips */
 
   .mainTrips {
     margin: 5.5rem 0 2rem 0;
 
-    h2 {
+    h1 {
       margin-bottom: 3rem;
       margin-top: 1rem;
       font-size: 4rem;
@@ -68,7 +86,7 @@
   .mainContact {
     margin: 0;
 
-    h2 {
+    h1 {
       font-size: 3rem;
     }
   }
@@ -78,7 +96,7 @@
   .mainFormSent {
     margin-top: 5rem;
 
-    h2 {
+    h1 {
       font-size: 3rem;
       margin: 3rem 8rem 2rem 8rem;
       font-weight: bolder;
@@ -104,23 +122,19 @@
   /* Header */
 
   header {
-    .logo {
-      flex-direction: column;
-
-      .nombre {
-        margin: 3rem 0rem 1rem 0rem;
-        font-size: 3rem;
-      }
-    }
-
     justify-content: center;
+
+    .logo img {
+      margin: 0;
+    }
   }
 
   /* Menu navegacion */
 
   .menuNavegacion {
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
+    padding: 0;
 
     a {
       margin-right: 0.2rem;
@@ -180,7 +194,7 @@
   .mainTrips {
     margin: 3.5rem;
 
-    h2 {
+    h1 {
       font-size: 2rem;
       margin-top: 1rem;
       margin-bottom: 2rem;
@@ -192,7 +206,7 @@
   .mainProjects {
     margin-top: 2rem;
 
-    h2 {
+    h1 {
       font-size: 2rem;
       margin-top: 2rem;
     }
@@ -203,7 +217,7 @@
   .mainContact {
     margin: 1rem 7rem;
 
-    h2 {
+    h1 {
       font-size: 2rem;
       margin: 2rem;
 
@@ -223,7 +237,7 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 
-    h2 {
+    h1 {
       font-size: 2rem;
       margin: 3rem 8rem 2rem 8rem;
       text-align: center;

@@ -1,5 +1,3 @@
-/* --------- Logo (todas las paginas) --------- */
-
 header {
   @include flex-row-center;
   justify-content: space-between;
@@ -8,54 +6,10 @@ header {
   margin-right: 2rem;
   flex-wrap: wrap;
 
-  .logo {
-    a {
-      text-decoration: none;
-    }
+  /* --------- Logo (todas las paginas) --------- */
 
-    @include flex-row-center;
-
-    .sb {
-      border-radius: 100%;
-      background-color: $colorDefault;
-      font-size: 8rem;
-      @include colorLetraHeader(white);
-      padding: 1.5rem;
-      transition: 0.2s;
-      font-family: $Monoton;
-
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-
-    .nombre {
-      font-size: 5rem;
-      margin-left: 1rem;
-      font-weight: bold;
-      text-shadow: 0.1rem 0.1rem rgba(124, 124, 124, 0.199);
-
-      div {
-        display: inline-block;
-        animation: blinkingText 1s infinite;
-      }
-    }
-  }
-}
-
-/* Animacion para nombre dentro del logo */
-
-@keyframes blinkingText {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
+  .logo img {
+    margin-left: 5rem;
   }
 }
 
@@ -122,6 +76,6 @@ header {
   text-decoration: none;
 }
 
-.menuNavegacion li:hover>ul {
+.menuNavegacion li:hover > ul {
   display: block;
 }

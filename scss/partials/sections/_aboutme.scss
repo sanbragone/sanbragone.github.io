@@ -1,8 +1,22 @@
 /* --------- aboutme.html --------- */
 
 .mainQuiensoy {
-  @include flex-row-center;
+  @include flex-column-center;
   justify-content: center;
+
+  h1 {
+    margin: 5rem;
+    font-size: 4rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .parrafoQuiensoy {
