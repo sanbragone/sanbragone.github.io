@@ -252,19 +252,3 @@
     margin-top: 2rem;
   }
 }
-
-/* --------- (Mobile - S) --------- */
-@media (max-width: 400px) {
-  .menuNavegacion {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .anchorMenuNavegacion {
-    margin: 0.1rem;
-  }
-
-  footer span {
-    font-size: small;
-  }
-}
