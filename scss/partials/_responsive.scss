@@ -287,6 +287,15 @@
 
     .tz-gallery {
       padding-top: 1rem;
+
+      .lightbox img {
+        transition: none;
+
+        &:hover {
+          transform: none;
+          box-shadow: none;
+        }
+      }
     }
   }
 

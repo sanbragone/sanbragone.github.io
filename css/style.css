@@ -455,6 +455,11 @@ footer {
       padding: 1rem 0; }
     .container-fluid .tz-gallery {
       padding-top: 1rem; }
+      .container-fluid .tz-gallery .lightbox img {
+        transition: none; }
+        .container-fluid .tz-gallery .lightbox img:hover {
+          transform: none;
+          box-shadow: none; }
   /* Footer */
   footer div {
     margin-top: 2rem; } }
