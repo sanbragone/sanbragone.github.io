@@ -350,8 +350,6 @@ footer {
   /* Galleries */
   .container-fluid {
     width: 100%; }
-  .lightbox img:hover {
-    transform: none; }
   /* Footer */
   .footerPortada {
     margin-top: 60rem; } }
@@ -446,8 +444,10 @@ footer {
     width: 100%;
     margin: 0;
     padding: 0; }
-  .tz-gallery {
-    padding-top: 1rem; }
+    .container-fluid .tz-gallery-trips {
+      padding: 1rem 0; }
+    .container-fluid .tz-gallery {
+      padding-top: 1rem; }
   /* Footer */
   footer div {
     margin-top: 2rem; } }
