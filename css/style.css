@@ -359,7 +359,7 @@ footer {
   .footerPortada {
     margin-top: 60rem; } }
 
-/* --------- (Mobile) --------- */
+/* --------- (Mobile - M/L) --------- */
 @media (max-width: 550px) {
   /* Header */
   header {
@@ -432,7 +432,7 @@ footer {
   .mainFormSent {
     margin-top: 2rem;
     margin-bottom: 2rem; }
-    .mainFormSent span {
+    .mainFormSent h2 {
       font-size: 2rem;
       margin: 3rem 8rem 2rem 8rem;
       text-align: center; }
@@ -448,3 +448,13 @@ footer {
   /* Footer */
   footer div {
     margin-top: 2rem; } }
+
+/* --------- (Mobile - S) --------- */
+@media (max-width: 320px) {
+  .menuNavegacion {
+    flex-direction: column;
+    padding: 0; }
+  .anchorMenuNavegacion {
+    margin: 0.1rem; }
+  footer span {
+    font-size: small; } }
