@@ -21,7 +21,6 @@ header {
   margin-top: 4rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  flex-wrap: wrap;
   /* --------- Logo (todas las paginas) --------- */ }
   header .logo img {
     margin-left: 5rem; }
@@ -294,7 +293,7 @@ footer {
     header .logo {
       margin: 0; }
       header .logo img {
-        margin: 0; }
+        margin: 0 auto; }
   /* Menu navegacion */
   .menuNavegacion {
     margin-top: 5rem;
@@ -314,8 +313,8 @@ footer {
     .mainQuiensoy h1 {
       margin-top: 7rem; }
   .fotoQuiensoy {
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
+    width: 50%;
+    margin: 0 auto; }
   .parrafoQuiensoy {
     font-size: 2rem;
     width: auto;
@@ -359,9 +358,12 @@ footer {
 @media (max-width: 550px) {
   /* Header */
   header {
-    justify-content: center; }
-    header .logo img {
+    justify-content: center;
+    flex-direction: column; }
+    header .logo {
       margin: 0; }
+      header .logo img {
+        margin: 0; }
   /* Menu navegacion */
   .menuNavegacion {
     margin-top: 3rem;
@@ -372,7 +374,8 @@ footer {
       background-color: black;
       color: white;
       border-radius: 0.5rem;
-      padding: 0;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
       text-decoration: none; }
   .anchorMenuNavegacion {
     font-size: 1.2rem;
@@ -388,17 +391,21 @@ footer {
     margin-top: 5rem;
     margin-bottom: 3rem; }
   /* aboutme.html */
+  .fotoQuiensoy {
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
   .parrafoQuiensoy {
-    margin: 4rem 5rem 2rem 5rem; }
+    width: auto;
+    font-size: 2rem;
+    margin: 3rem 10rem; }
   .mainQuiensoy {
     flex-direction: column; }
-    .mainQuiensoy p {
-      width: auto;
-      font-size: 2rem; }
-    .mainQuiensoy img {
+    .mainQuiensoy h1 {
+      font-size: 2rem;
       margin-top: 5rem;
-      margin-bottom: 0;
-      height: 35rem; }
+      margin-bottom: 1rem; }
+    .mainQuiensoy div {
+      flex-direction: column; }
   /* Trips */
   .mainTrips {
     margin: 3.5rem; }
