@@ -110,6 +110,12 @@
     width: 100%;
   }
 
+  .lightbox img {
+    &:hover {
+      transform: none;
+    }
+  }
+
   /* Footer */
 
   .footerPortada {
