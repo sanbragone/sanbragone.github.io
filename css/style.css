@@ -297,6 +297,7 @@ footer {
     header .logo {
       margin: 0; }
       header .logo img {
+        width: 20rem;
         margin: 0 auto; }
   /* Menu navegacion */
   .menuNavegacion {
@@ -374,6 +375,7 @@ footer {
     header .logo {
       margin: 0; }
       header .logo img {
+        width: 15rem;
         margin: 0; }
   /* Menu navegacion */
   .menuNavegacion {
