@@ -450,7 +450,7 @@ footer {
     margin-top: 2rem; } }
 
 /* --------- (Mobile - S) --------- */
-@media (max-width: 370px) {
+@media (max-width: 400px) {
   .menuNavegacion {
     flex-direction: column;
     padding: 0; }
