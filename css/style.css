@@ -158,6 +158,17 @@ footer {
 .container-fluid {
   width: 70%; }
 
+/* --------- aboutme.html --------- */
+.mainQuiensoy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.fotoQuiensoy {
+  margin: 10rem;
+  border-radius: 0.5rem; }
+
 /* --------- contactme.html --------- */
 .mainContact {
   display: flex;
@@ -287,17 +298,6 @@ footer {
   .mainTrips h2 {
     margin: 5rem;
     font-size: 4rem; }
-
-/* --------- aboutme.html --------- */
-.mainQuiensoy {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; }
-
-.fotoQuiensoy {
-  margin: 10rem;
-  border-radius: 0.5rem; }
 
 /* --------- Contenido Responsive --------- */
 /* --------- (Tablet) --------- */
@@ -450,7 +450,7 @@ footer {
     margin-top: 2rem; } }
 
 /* --------- (Mobile - S) --------- */
-@media (max-width: 320px) {
+@media (max-width: 370px) {
   .menuNavegacion {
     flex-direction: column;
     padding: 0; }
