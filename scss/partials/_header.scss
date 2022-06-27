@@ -21,8 +21,8 @@ header {
       font-size: 8rem;
       @include colorLetraHeader(white);
       padding: 1.5rem;
-      font-weight: bold;
       transition: 0.2s;
+      font-family: $Monoton;
 
       &:hover {
         opacity: 0.8;

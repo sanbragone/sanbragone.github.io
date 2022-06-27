@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron&family=Plus+Jakarta+Sans:wght@300&display=swap");
 .parrafoQuiensoy {
   font-size: 3rem;
   text-align: justify;
@@ -35,8 +36,8 @@ header {
       font-size: 8rem;
       color: white;
       padding: 1.5rem;
-      font-weight: bold;
-      transition: 0.2s; }
+      transition: 0.2s;
+      font-family: "Monoton", cursive; }
       header .logo .sb:hover {
         opacity: 0.8; }
     header .logo .nombre {
@@ -131,7 +132,7 @@ footer {
       opacity: 0.8; }
   footer span {
     text-align: center;
-    font-size: small;
+    font-size: medium;
     margin-bottom: 5rem; }
 
 .tz-gallery {
@@ -153,6 +154,9 @@ footer {
 @media (max-width: 768px) {
   body {
     padding: 0; } }
+
+.container-fluid {
+  width: 70%; }
 
 /* --------- contactme.html --------- */
 .mainContact {
@@ -324,7 +328,7 @@ footer {
   /* trips */
   .mainTrips {
     margin: 5.5rem 0 2rem 0; }
-    .mainTrips span {
+    .mainTrips h2 {
       margin-bottom: 3rem;
       margin-top: 1rem;
       font-size: 4rem; }
@@ -338,16 +342,19 @@ footer {
   /* contactme.html */
   .mainContact {
     margin: 0; }
-    .mainContact span {
+    .mainContact h2 {
       font-size: 3rem; }
   /* formsent.html */
   .mainFormSent {
     margin-top: 5rem; }
-    .mainFormSent span {
+    .mainFormSent h2 {
       font-size: 3rem;
       margin: 3rem 8rem 2rem 8rem;
       font-weight: bolder;
       text-align: center; }
+  /* Galleries */
+  .container-fluid {
+    width: 100%; }
   /* Footer */
   .footerPortada {
     margin-top: 60rem; } }
@@ -371,11 +378,14 @@ footer {
       background-color: black;
       color: white;
       border-radius: 0.5rem;
-      padding: 0.1rem 1rem;
+      padding: 0.1rem 0.5rem;
       text-decoration: none; }
   .anchorMenuNavegacion {
     font-size: 1.2rem;
     padding: 0.1rem; }
+    .anchorMenuNavegacion:hover {
+      font-size: 1.2rem;
+      padding: 0.1rem; }
   .anchorSubMenuNavegacion {
     font-size: 1rem; }
   /* index.html */
@@ -398,22 +408,24 @@ footer {
   /* Trips */
   .mainTrips {
     margin: 3.5rem; }
-    .mainTrips span {
-      font-size: 2rem; }
+    .mainTrips h2 {
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
   /* projects.html */
   .mainProjects {
     margin-top: 2rem; }
-    .mainProjects span {
+    .mainProjects h2 {
       font-size: 2rem;
       margin-top: 2rem; }
   /* contact.html */
   .mainContact {
     margin: 1rem 7rem; }
-    .mainContact span {
-      font-size: 1.5rem;
+    .mainContact h2 {
+      font-size: 2rem;
       margin: 2rem; }
-      .mainContact span:hover {
-        font-size: 2rem; }
+      .mainContact h2:hover {
+        font-size: 2.5rem; }
     .mainContact form textarea {
       height: 20rem; }
   /* formsent.html */
@@ -426,6 +438,13 @@ footer {
       text-align: center; }
     .mainFormSent a {
       margin: 1rem; }
+  /* Galleries */
+  .container-fluid {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  .tz-gallery {
+    padding-top: 1rem; }
   /* Footer */
   footer div {
     margin-top: 2rem; } }
