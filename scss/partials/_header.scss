@@ -19,30 +19,30 @@ header {
   justify-content: center;
   list-style: none;
   flex-wrap: wrap;
-}
 
-.anchorMenuNavegacion {
-  font-size: 2rem;
-  color: $colorDefault;
-  font-weight: bolder;
-  text-transform: uppercase;
-  padding: 0.1rem 1rem;
-  display: block;
-  text-decoration: none;
-
-  &:hover {
-    cursor: pointer;
+  .anchorMenuNavegacion {
+    font-size: 2rem;
     color: $colorDefault;
-    border-style: solid;
-    border-color: black;
-    border-width: 0.2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
     padding: 0.1rem 1rem;
+    display: block;
     text-decoration: none;
-  }
-}
 
-.header__a--active {
-  text-decoration: overline;
+    &:hover {
+      cursor: pointer;
+      color: $colorDefault;
+      border-style: solid;
+      border-color: black;
+      border-width: 0.2rem;
+      padding: 0.1rem 1rem;
+      text-decoration: none;
+    }
+  }
+
+  .header__a--active {
+    text-decoration: overline;
+  }
 }
 
 /* --------- Submenu de navegacion "Trips" --------- */

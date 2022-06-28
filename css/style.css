@@ -33,26 +33,24 @@ header {
   justify-content: center;
   list-style: none;
   flex-wrap: wrap; }
-
-.anchorMenuNavegacion {
-  font-size: 2rem;
-  color: black;
-  font-weight: bolder;
-  text-transform: uppercase;
-  padding: 0.1rem 1rem;
-  display: block;
-  text-decoration: none; }
-  .anchorMenuNavegacion:hover {
-    cursor: pointer;
+  .menuNavegacion .anchorMenuNavegacion {
+    font-size: 2rem;
     color: black;
-    border-style: solid;
-    border-color: black;
-    border-width: 0.2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
     padding: 0.1rem 1rem;
+    display: block;
     text-decoration: none; }
-
-.header__a--active {
-  text-decoration: overline; }
+    .menuNavegacion .anchorMenuNavegacion:hover {
+      cursor: pointer;
+      color: black;
+      border-style: solid;
+      border-color: black;
+      border-width: 0.2rem;
+      padding: 0.1rem 1rem;
+      text-decoration: none; }
+  .menuNavegacion .header__a--active {
+    text-decoration: overline; }
 
 /* --------- Submenu de navegacion "Trips" --------- */
 .menuNavegacion li ul {
@@ -304,20 +302,25 @@ footer {
   .menuNavegacion {
     margin-top: 5rem;
     padding: 0; }
-    .menuNavegacion a {
+    .menuNavegacion .anchorMenuNavegacion {
       background-color: black;
       color: white;
       margin-right: 0.5rem;
       border-radius: 0.5rem;
       padding: 0.1rem 1rem;
       text-decoration: none; }
+      .menuNavegacion .anchorMenuNavegacion:hover {
+        color: white;
+        padding: 0.1rem 1rem;
+        border-width: 0; }
   /* aboutme.html */
   .mainQuiensoy {
     flex-direction: column; }
     .mainQuiensoy div {
       flex-direction: column; }
     .mainQuiensoy h1 {
-      margin-top: 7rem; }
+      margin-top: 7rem;
+      font-size: 3rem; }
   .fotoQuiensoy {
     width: 50%;
     margin: 0 auto; }
@@ -332,14 +335,14 @@ footer {
     .mainTrips h1 {
       margin-bottom: 3rem;
       margin-top: 1rem;
-      font-size: 4rem; }
+      font-size: 3rem; }
   /* projects.html */
   .mainProjects {
     margin: 5.5rem 0 2rem 0; }
     .mainProjects h1 {
       margin-bottom: 3rem;
       margin-top: 1rem;
-      font-size: 4rem; }
+      font-size: 3rem; }
   /* contactme.html */
   .mainContact {
     margin: 0; }
@@ -367,7 +370,7 @@ footer {
   .footerPortada {
     margin-top: 60rem; } }
 
-/* --------- (Mobile - M/L) --------- */
+/* --------- (Mobile) --------- */
 @media (max-width: 550px) {
   /* Header */
   header {
@@ -391,8 +394,12 @@ footer {
       border-radius: 0.5rem;
       padding: 0.5rem 0.2rem;
       text-decoration: none; }
-  .anchorSubMenuNavegacion {
-    font-size: 1rem; }
+      .menuNavegacion .anchorMenuNavegacion:hover {
+        color: white;
+        padding: 0.5rem 0.2rem;
+        border-width: 0; }
+      .menuNavegacion .anchorMenuNavegacion .anchorSubMenuNavegacion {
+        font-size: 1rem; }
   /* index.html */
   .fotoPortada {
     display: flex;
