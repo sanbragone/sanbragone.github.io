@@ -398,8 +398,8 @@ footer {
         color: white;
         padding: 0.5rem 0.2rem;
         border-width: 0; }
-      .menuNavegacion .anchorMenuNavegacion .anchorSubMenuNavegacion {
-        font-size: 1rem; }
+    .menuNavegacion .anchorSubMenuNavegacion {
+      font-size: 1rem; }
   /* index.html */
   .fotoPortada {
     display: flex;
