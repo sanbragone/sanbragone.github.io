@@ -7,7 +7,7 @@
 
 <h3>Mobile Mockup</h3>
 
-![sábado, 04 jun  2022 20 09 22](https://user-images.githubusercontent.com/33030778/172028381-ff8d2381-2ec9-47b8-b618-adf8318ddcd2.png)
+![lunes, 27 jun  2022 21 13 18](https://user-images.githubusercontent.com/33030778/176060349-bc9f2f70-edd6-489a-a3a4-757ebeea30ab.png)
 
 <h3>Wireframe</h3>
 
