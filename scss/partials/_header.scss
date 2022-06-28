@@ -32,6 +32,7 @@ header {
     &:hover {
       cursor: pointer;
       color: $colorDefault;
+      background-color: #F5FF6A;
       border-style: solid;
       border-color: black;
       border-width: 0.2rem;
@@ -73,7 +74,7 @@ header {
   @include colorLetraHeader(white);
   text-decoration: none;
   color: black;
-  background-color: white;
+  background-color: #F5FF6A;;
   border-style: solid;
   border-color: black;
   border-width: 0.2rem;

@@ -44,6 +44,7 @@ header {
     .menuNavegacion .anchorMenuNavegacion:hover {
       cursor: pointer;
       color: black;
+      background-color: #F5FF6A;
       border-style: solid;
       border-color: black;
       border-width: 0.2rem;
@@ -76,7 +77,7 @@ header {
   color: white;
   text-decoration: none;
   color: black;
-  background-color: white;
+  background-color: #F5FF6A;
   border-style: solid;
   border-color: black;
   border-width: 0.2rem;
