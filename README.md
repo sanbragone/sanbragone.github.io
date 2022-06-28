@@ -3,7 +3,7 @@
 
 <h3>Tablet Mockup</h3>
 
-<img width="961" alt="sábado, 04 jun  2022 20 25 09" src="https://user-images.githubusercontent.com/33030778/172028652-e73f1234-93b4-48ee-b418-091da2a06481.png">
+<img width="961" alt="lunes, 27 jun  2022 22 27 05" src="https://user-images.githubusercontent.com/33030778/176067280-1650e131-249d-4c2a-b656-7f2a549e0dd5.png">
 
 <h3>Mobile Mockup</h3>
 
