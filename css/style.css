@@ -313,7 +313,8 @@ footer {
       .menuNavegacion .anchorMenuNavegacion:hover {
         color: white;
         padding: 0.1rem 1rem;
-        border-width: 0; }
+        border-width: 0;
+        background-color: black; }
   /* aboutme.html */
   .mainQuiensoy {
     flex-direction: column; }
@@ -398,7 +399,8 @@ footer {
       .menuNavegacion .anchorMenuNavegacion:hover {
         color: white;
         padding: 0.5rem 0.2rem;
-        border-width: 0; }
+        border-width: 0;
+        background-color: black; }
     .menuNavegacion .anchorSubMenuNavegacion {
       font-size: 1rem; }
   /* index.html */
