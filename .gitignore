@@ -23,7 +23,6 @@ Temporary Items
 # Agregados
 node_modules/
 readmeSass.txt
-*.json
 mockupIpad.png
 mockupIphone.png
 wireframeFinal.svg
