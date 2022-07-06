@@ -1,29 +1,29 @@
 /* --------- Footer (todas las paginas) --------- */
 
 footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  div {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-  
-    div {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 1rem;
-      margin-top: 5rem;
-    }
-  
-    img {
-      width: 3.2rem;
-      height: 3.2rem;
-  
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  
-    span {
-      text-align: center;
-      font-size: medium;
-      margin-bottom: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+  }
+
+  img {
+    width: 3.2rem;
+    height: 3.2rem;
+
+    &:hover {
+      opacity: 0.5;
     }
   }
+
+  span {
+    text-align: center;
+    font-size: medium;
+    margin-bottom: 5rem;
+  }
+}
