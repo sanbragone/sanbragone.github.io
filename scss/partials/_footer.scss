@@ -15,9 +15,11 @@ footer {
   img {
     width: 3.2rem;
     height: 3.2rem;
+  }
 
+  a {
     &:hover {
-      opacity: 0.5;
+      opacity: 0.8;
     }
   }
 

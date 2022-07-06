@@ -99,8 +99,8 @@ footer {
   footer img {
     width: 3.2rem;
     height: 3.2rem; }
-    footer img:hover {
-      opacity: 0.5; }
+  footer a:hover {
+    opacity: 0.8; }
   footer span {
     text-align: center;
     font-size: medium;
