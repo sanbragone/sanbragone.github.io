@@ -288,6 +288,10 @@ footer {
     font-weight: bold;
     padding: 0.5rem; }
 
+.imgShopping {
+  width: 20vh;
+  margin: 10rem; }
+
 /* --------- Contenido Responsive --------- */
 /* --------- (Tablet) --------- */
 @media screen and (max-width: 1024px) and (min-width: 650px) {
