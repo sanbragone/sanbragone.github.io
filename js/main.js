@@ -337,5 +337,3 @@ console.log("El array TRIPS tiene " + trips.length + " objetos en total");
 // Filtro para precio menor a 25 dolares.
 const filtroPrecio = trips.filter((el) => el.precio < 25);
 console.log(filtroPrecio);
-
-//////////////////////////////////
