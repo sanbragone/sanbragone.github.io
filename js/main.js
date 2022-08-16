@@ -410,6 +410,6 @@ for (const product of arrayTripsAll) {
   const button = document.getElementById(`button-${product.id}`);
   button.addEventListener("click", () => {
     shoppingCart.push(product);
-    console.log("El carrito de compras tiene " + shoppingCart.length + " productos.");
+    console.log(shoppingCart);
   });
 }
