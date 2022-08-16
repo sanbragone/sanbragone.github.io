@@ -404,7 +404,7 @@ const arrayTripsAll = arrayEurope.concat(arrayMexico, arrayNYC);
 
 const shoppingCart = [];
 
-// Para carro de compras.
+// Evento que escucha cuando se hace clic sobre un boton de alguna de las cards de cualquiera de los arrays.
 
 for (const product of arrayTripsAll) {
   const button = document.getElementById(`button-${product.id}`);
