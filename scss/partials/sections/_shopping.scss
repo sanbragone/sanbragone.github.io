@@ -1,4 +1,31 @@
-.imgShopping {
-    width: 20vh;
-    margin: 10rem;
+.mainShopping {
+  @include flex-column-center;
+  margin-top: 7rem;
+
+  h1 {
+    margin: 5rem;
+    font-size: 4rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+
+  p {
+    font-size: 3rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+}
+
+.card {
+  margin: 2rem;
+  border-color: black;
+  border-width: 0.2rem;
+}
+
+.card-img-top {
+  padding: 1rem;
 }
