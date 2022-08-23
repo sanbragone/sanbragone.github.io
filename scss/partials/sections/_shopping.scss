@@ -54,6 +54,9 @@
 
 .navbar-toggler {
   background-color: black;
+  display: flex;
+  align-items: center;
+  border-radius: 0;
 }
 
 .bi-cart {
@@ -62,6 +65,14 @@
 
 .offcanvas-title {
   font-size: 3rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.cartText {
+  font-size: 4rem;
   background-color: black;
   color: white;
   font-weight: bold;
@@ -81,4 +92,14 @@
 .btn-dark:focus {
   color: #f2fa70;
   font-weight: bolder;
+}
+
+.navbar {
+  border-width: 0;
+  border-radius: 0;
+}
+
+.navbarPosition {
+  display: flex;
+  justify-content: flex-end;
 }

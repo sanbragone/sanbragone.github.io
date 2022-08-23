@@ -334,13 +334,23 @@ footer {
   padding: 0.5rem; }
 
 .navbar-toggler {
-  background-color: black; }
+  background-color: black;
+  display: flex;
+  align-items: center;
+  border-radius: 0; }
 
 .bi-cart {
   color: white; }
 
 .offcanvas-title {
   font-size: 3rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem; }
+
+.cartText {
+  font-size: 4rem;
   background-color: black;
   color: white;
   font-weight: bold;
@@ -357,6 +367,14 @@ footer {
 .btn-dark:focus {
   color: #f2fa70;
   font-weight: bolder; }
+
+.navbar {
+  border-width: 0;
+  border-radius: 0; }
+
+.navbarPosition {
+  display: flex;
+  justify-content: flex-end; }
 
 /* --------- Contenido Responsive --------- */
 /* --------- (Tablet) --------- */
