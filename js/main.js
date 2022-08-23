@@ -1,66 +1,112 @@
-// Funcion con codigo HTML para ir agregando las cards a la web.
+// Variable para contador de carrito.
+
+let counterCart = 0;
+
+// Array vacio para ir agregando productos.
+
+const shoppingCart = [];
+
+// Funcion con codigo HTML para ir agregando las cards de los arreglos que tengo declarados, a la web.
 
 const productToHTML = (product) => {
-  const HTMLCode = `
+  return `
   <div class="col-sm-6 col-lg-3">
     <div class="card" style="width: 30rem;">
         <img src=${product.path} class="card-img-top">
         <div class="card-body">
           <h4 class="card-title">${product.nameImage}</h4>
           <h5 class="card-title">Price: U$S ${product.price}</h5>
-          <a href="#" id="button-${product.id}" class="btn btn-dark">Add to cart</a>
+          <button id="button-catalog-${product.id}" class="btn btn-dark">Add to cart</button>
         </div>
     </div>
   </div>
   `;
-  return HTMLCode;
 };
 
-// Funcion e iteracion para agregar cards de fotos de Europa a la web.
+// Funcion con codigo HTML para ir agregando las cards de lo que se va agregando al carrito, a la web (carrito de compras).
 
-const addToCatalogEurope = (productEurope) => {
-  const catalogEurope = document.getElementById("catalogEurope");
-  catalogEurope.innerHTML += productToHTML(productEurope);
+const cartToHTML = (product) => {
+  return `
+  <div class="col-sm-6 col-lg-3">
+    <div class="card" style="width: 30rem;">
+        <img src=${product.path} class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">${product.nameImage}</h4>
+          <h5 class="card-title">Price: U$S ${product.price}</h5>
+          <button id="button-cart-${product.idPurchase}" class="btn btn-dark">Remove</button>
+        </div>
+    </div>
+  </div>
+  `;
 };
 
-for (const productEurope of arrayEurope) {
-  addToCatalogEurope(productEurope);
-}
+console.log(productToHTML(photos[0]))
+console.log(cartToHTML(photos[0]))
 
-// Funcion e iteracion para agregar cards de fotos de Mexico a la web.
+// Funcion e iteracion para mostrar los catalogos (codigo HTML - cards) de cada viaje en la pagina web.
 
-const addToCatalogMexico = (productMexico) => {
-  const catalogMexico = document.getElementById("catalogMexico");
-  catalogMexico.innerHTML += productToHTML(productMexico);
+const showCatalog = () => {
+  const catalogNode = document.getElementById("catalog");
+  let catalogHTML = "";
+
+  for (const product of photos) {
+    catalogHTML += productToHTML(product);
+  }
+
+  catalogNode.innerHTML = catalogHTML;
+  buttonCatalog();
 };
 
-for (const productMexico of arrayMexico) {
-  addToCatalogMexico(productMexico);
-}
+// Funcion e iteracion para mostrar los productos del carrito (codigo HTML - cards) en la pagina web.
 
-// Funcion e iteracion para agregar cards de fotos de NYC a la web.
+const showCart = () => {
+  const cartNode = document.getElementById("totalCart");
+  const priceNode = document.getElementById("totalAmount");
 
-const addToCatalogNYC = (productNYC) => {
-  const catalogNYC = document.getElementById("catalogNYC");
-  catalogNYC.innerHTML += productToHTML(productNYC);
+  let cartHTML = "";
+  let price = 0;
+  for (const product of shoppingCart) {
+    cartHTML += cartToHTML(product);
+    price += product.price;
+  }
+
+  priceNode.innerHTML = price;
+  cartNode.innerHTML = cartHTML;
+  buttonCart();
 };
 
-for (const productNYC of arrayNYC) {
-  addToCatalogNYC(productNYC);
-}
+// Funciones y evento que escucha cuando se hace clic sobre un boton de alguna de las cards de cualquiera de los arrays.
 
-const arrayTripsAll = arrayEurope.concat(arrayMexico, arrayNYC);
+const buttonCatalog = () => {
+  for (const product of photos) {
+    const buttonCatalog = document.getElementById(`button-catalog-${product.id}`);
 
-// Array vacio para ir agregando productos.
+    buttonCatalog.addEventListener("click", () => {
+      const productCart = {
+        nameImage: product.nameImage,
+        price: product.price,
+        purchaseId: counterCart,
+      };
 
-const shoppingCart = [];
+      counterCart += 1;
+      shoppingCart.push(productCart);
+      showCart();
+    });
+  }
+};
 
-// Evento que escucha cuando se hace clic sobre un boton de alguna de las cards de cualquiera de los arrays.
+const buttonCart = () => {
+  for (const product of shoppingCart) {
+    const buttonCart = document.getElementById(`button-cart-${product.idPurchase}`);
 
-for (const product of arrayTripsAll) {
-  const button = document.getElementById(`button-${product.id}`);
-  button.addEventListener("click", () => {
-    shoppingCart.push(product);
-    console.log(shoppingCart);
-  });
-}
+    buttonCart.addEventListener("click", () => {
+      const index = shoppingCart.findIndex((p) => p.idPurchase == product.idPurchase);
+      shoppingCart.splice(index, 1);
+      showCart();
+    });
+  }
+};
+
+// Ejecucion de funcion para agregar a catalogo.
+
+showCatalog();
