@@ -307,6 +307,9 @@ footer {
     font-weight: bold;
     padding: 0.5rem; }
 
+.card-title {
+  font-weight: bolder; }
+
 .card {
   margin: 2rem;
   border-color: black;
@@ -314,6 +317,46 @@ footer {
 
 .card-img-top {
   padding: 1rem; }
+
+.totalAmount-display {
+  display: flex;
+  padding: 1rem; }
+
+.cartDisplay {
+  display: flex;
+  flex-direction: column; }
+
+.totalAmount {
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem; }
+
+.navbar-toggler {
+  background-color: black; }
+
+.bi-cart {
+  color: white; }
+
+.offcanvas-title {
+  font-size: 3rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem; }
+
+.totalCart {
+  display: flex;
+  flex-direction: column; }
+
+.btn-dark:hover {
+  color: white;
+  font-weight: bolder; }
+
+.btn-dark:focus {
+  color: #f2fa70;
+  font-weight: bolder; }
 
 /* --------- Contenido Responsive --------- */
 /* --------- (Tablet) --------- */

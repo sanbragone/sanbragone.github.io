@@ -16,7 +16,7 @@ const productToHTML = (product) => {
         <div class="card-body">
           <h4 class="card-title">${product.nameImage}</h4>
           <h5 class="card-title">Price: U$S ${product.price}</h5>
-          <button id="button-catalog-${product.id}" class="btn btn-dark">Add to cart</button>
+          <button id="button-catalog-${product.id}" class="btn btn-dark animate__animated animate__pulse">Add to cart</button>
         </div>
     </div>
   </div>
@@ -29,7 +29,6 @@ const cartToHTML = (product) => {
   return `
   <div class="col-sm-6 col-lg-3">
     <div class="card" style="width: 30rem;">
-        <img src=${product.path} class="card-img-top">
         <div class="card-body">
           <h4 class="card-title">${product.nameImage}</h4>
           <h5 class="card-title">Price: U$S ${product.price}</h5>
@@ -39,9 +38,6 @@ const cartToHTML = (product) => {
   </div>
   `;
 };
-
-console.log(productToHTML(photos[0]))
-console.log(cartToHTML(photos[0]))
 
 // Funcion e iteracion para mostrar los catalogos (codigo HTML - cards) de cada viaje en la pagina web.
 
@@ -85,7 +81,7 @@ const buttonCatalog = () => {
       const productCart = {
         nameImage: product.nameImage,
         price: product.price,
-        purchaseId: counterCart,
+        idPurchase: counterCart,
       };
 
       counterCart += 1;
