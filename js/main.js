@@ -75,7 +75,9 @@ const showCart = () => {
 
 const buttonCatalog = () => {
   for (const product of photos) {
-    const buttonCatalog = document.getElementById(`button-catalog-${product.id}`);
+    const buttonCatalog = document.getElementById(
+      `button-catalog-${product.id}`
+    );
 
     buttonCatalog.addEventListener("click", () => {
       const productCart = {
@@ -93,10 +95,14 @@ const buttonCatalog = () => {
 
 const buttonCart = () => {
   for (const product of shoppingCart) {
-    const buttonCart = document.getElementById(`button-cart-${product.idPurchase}`);
+    const buttonCart = document.getElementById(
+      `button-cart-${product.idPurchase}`
+    );
 
     buttonCart.addEventListener("click", () => {
-      const index = shoppingCart.findIndex((p) => p.idPurchase == product.idPurchase);
+      const index = shoppingCart.findIndex(
+        (p) => p.idPurchase == product.idPurchase
+      );
       shoppingCart.splice(index, 1);
       showCart();
     });
