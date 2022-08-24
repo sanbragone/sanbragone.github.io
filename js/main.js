@@ -115,3 +115,15 @@ const buttonCart = () => {
 // Ejecucion de funcion para agregar a catalogo.
 
 showCatalog();
+
+// Recuperar elementos guardados en localStorage.
+
+const ShopCartItems = JSON.parse(localStorage.getItem("itemCart"));
+
+// Si el LS esta vacio muestro en consola el mensaje. Sino, los elementos.
+
+if (ShopCartItems != null) {
+  console.log(ShopCartItems);
+} else {
+  console.log("El localStorage está vacío.");
+}
