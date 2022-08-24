@@ -66,8 +66,9 @@ const showCart = () => {
     price += product.price;
   }
 
-  priceNode.innerHTML = price;
   cartNode.innerHTML = cartHTML;
+  priceNode.innerHTML = price;
+
   buttonCart();
 };
 
@@ -89,6 +90,7 @@ const buttonCatalog = () => {
       counterCart += 1;
       shoppingCart.push(productCart);
       showCart();
+      localStorage.setItem("itemCart", JSON.stringify(shoppingCart));
     });
   }
 };
@@ -105,6 +107,7 @@ const buttonCart = () => {
       );
       shoppingCart.splice(index, 1);
       showCart();
+      localStorage.removeItem("itemCart");
     });
   }
 };

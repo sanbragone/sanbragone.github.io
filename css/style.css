@@ -337,7 +337,8 @@ footer {
   background-color: black;
   display: flex;
   align-items: center;
-  border-radius: 0; }
+  border-radius: 0;
+  justify-content: flex-end; }
 
 .bi-cart {
   color: white; }
@@ -371,10 +372,6 @@ footer {
 .navbar {
   border-width: 0;
   border-radius: 0; }
-
-.navbarPosition {
-  display: flex;
-  justify-content: flex-end; }
 
 /* --------- Contenido Responsive --------- */
 /* --------- (Tablet) --------- */
