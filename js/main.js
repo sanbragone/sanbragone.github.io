@@ -4,7 +4,7 @@ let counterCart = 0;
 
 // Array vacio para ir agregando productos.
 
-const shoppingCart = [];
+//let shoppingCart = [];
 
 // Funcion con codigo HTML para ir agregando las cards de los arreglos que tengo declarados, a la web.
 
@@ -87,6 +87,22 @@ const buttonCatalog = () => {
         idPurchase: counterCart,
       };
 
+      // Popup (de libreria Toastify) para confirmacion de fotografia agregada al carrito.
+      Toastify({
+        text: "Photo added to cart :D",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "black",
+        },
+        onClick: function () {}, // Callback after click
+      }).showToast();
+
       counterCart += 1;
       shoppingCart.push(productCart);
       showCart();
@@ -105,6 +121,23 @@ const buttonCart = () => {
       const index = shoppingCart.findIndex(
         (p) => p.idPurchase == product.idPurchase
       );
+
+      // Popup (de libreria Toastify) para confirmacion de fotografia eliminada del carrito.
+      Toastify({
+        text: "Photo removed from cart :(",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "black",
+        },
+        onClick: function () {}, // Callback after click
+      }).showToast();
+
       shoppingCart.splice(index, 1);
       showCart();
       localStorage.removeItem("itemCart");
@@ -116,14 +149,27 @@ const buttonCart = () => {
 
 showCatalog();
 
-// Recuperar elementos guardados en localStorage.
+// Recupero la informacion del localStorage y valido si el carrito tiene items para presentarlos nuevamente en la web. Para esto utilizo el operador logico OR.
 
-const ShopCartItems = JSON.parse(localStorage.getItem("itemCart"));
+const shoppingCart = JSON.parse(localStorage.getItem("itemCart")) || [];
+showCart();
 
-// Si el LS esta vacio muestro en consola el mensaje. Sino, los elementos.
+// Utilizo operador ternario para mostrar si el LS esta vacio o lleno. En base a eso muestro un mensaje o los elementos del arreglo.
 
-if (ShopCartItems != null) {
-  console.log(ShopCartItems);
-} else {
-  console.log("El localStorage está vacío.");
-}
+shoppingCart != 0
+  ? console.log(shoppingCart)
+  : console.log("El localStorage está vacío.");
+
+/*
+
+// Desestructuracion de arreglo "photos".
+const [a, , , , , b] = photos;
+
+console.log(a);
+console.log(b);
+
+// Spread de array.
+
+console.log(...photos);
+
+*/
