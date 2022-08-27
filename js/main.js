@@ -150,17 +150,14 @@ const buttonCart = () => {
 showCatalog();
 
 // Recupero la informacion del localStorage y valido si el carrito tiene items para presentarlos nuevamente en la web. Para esto utilizo el operador logico OR.
-
 const shoppingCart = JSON.parse(localStorage.getItem("itemCart")) || [];
 showCart();
 
 // Utilizo operador ternario para mostrar si el LS esta vacio o lleno. En base a eso muestro un mensaje o los elementos del arreglo.
-
 shoppingCart != 0
   ? console.log(shoppingCart)
   : console.log("El localStorage está vacío.");
 
-/*
 
 // Desestructuracion de arreglo "photos".
 const [a, , , , , b] = photos;
@@ -169,7 +166,4 @@ console.log(a);
 console.log(b);
 
 // Spread de array.
-
 console.log(...photos);
-
-*/
