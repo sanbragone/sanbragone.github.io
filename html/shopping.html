@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="photography, contact, trips, travel, projects, projects">
     <meta name="description" content="Projects carried out throughout my career.">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="/img/icons/camera-solid.svg" type="image/x-icon">
@@ -17,8 +19,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- CSS libreria Toastify -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- CSS dark mode -->
+    <link rel="stylesheet" href="/css/darkMode.css">
     <!-- CSS propio -->
     <link rel="stylesheet" href="/css/style.css">
+
     <title>SB | Shop</title>
 </head>
 
@@ -50,33 +55,38 @@
     </header>
     <!-- Main -->
     <main class="mainShopping">
+                <!-- Switch para dark mode -->
+                <button class="switch" id="switch">
+                    <span></i></span>
+                    <span></i></span>
+                </button>
         <h1 class="animate__animated animate__backInRight">Shopping Site</h1>
         <!-- Componente para carrito de compras -->
-            <nav>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <div class="cartText">Enter the shopping cart</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                        class="bi bi-cart" viewBox="0 0 16 16">
-                        <path
-                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                    </svg>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Items in shopping cart</h5>
+        <nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <div class="cartText">Enter the shopping cart</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Items in shopping cart</h5>
+                </div>
+                <div class="cartDisplay">
+                    <div class="totalAmount-display">
+                        <div class="totalAmount">Total amount U$S: </div><span id="totalAmount"
+                            class="totalAmount">0</span>
                     </div>
-                    <div class="cartDisplay">
-                        <div class="totalAmount-display">
-                            <div class="totalAmount">Total amount U$S: </div><span id="totalAmount"
-                                class="totalAmount">0</span>
-                        </div>
-                        <div id="totalCart" class="totalCart">
-                        </div>
+                    <div id="totalCart" class="totalCart">
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
         <div class="container-fluid">
             <div class="row" id="catalog">
             </div>
@@ -101,11 +111,13 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Script para libreria Toastify -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-        <!-- Script para libreria Luxon -->
+    <!-- Script para libreria Luxon -->
     <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
     <!-- Scripts JS propios -->
     <script src="../js/data.js"></script>
     <script src="../js/main.js"></script>
+    <!-- Script para boton dark mode -->
+    <script src="../js/darkMode.js"></script>
     <!-- Scripts Bootstraps -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
