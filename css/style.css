@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Plus+Jakarta+Sans:wght@300&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
 .parrafoQuiensoy {
   font-size: 3rem;
   text-align: justify;
   width: 80rem;
-  margin: 10rem; }
+  margin: 10rem;
+}
 
 /* --------- Formateo general sitio --------- */
 * {
@@ -11,7 +19,8 @@
   padding: 0;
   border: 0;
   font-family: "Montserrat", sans-serif;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 header {
   display: flex;
@@ -21,9 +30,12 @@ header {
   margin-top: 4rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  /* --------- Logo (todas las paginas) --------- */ }
-  header .logo img {
-    margin-left: 5rem; }
+  /* --------- Logo (todas las paginas) --------- */
+}
+
+header .logo img {
+  margin-left: 5rem;
+}
 
 /* --------- Menu de navegacion (todas las paginas) --------- */
 .menuNavegacion {
@@ -32,26 +44,33 @@ header {
   align-items: center;
   justify-content: center;
   list-style: none;
-  flex-wrap: wrap; }
-  .menuNavegacion .anchorMenuNavegacion {
-    font-size: 2rem;
-    color: black;
-    font-weight: bolder;
-    text-transform: uppercase;
-    padding: 0.1rem 1rem;
-    display: block;
-    text-decoration: none; }
-    .menuNavegacion .anchorMenuNavegacion:hover {
-      cursor: pointer;
-      color: black;
-      background-color: #F5FF6A;
-      border-style: solid;
-      border-color: black;
-      border-width: 0.2rem;
-      padding: 0.1rem 1rem;
-      text-decoration: none; }
-  .menuNavegacion .header__a--active {
-    text-decoration: overline; }
+  flex-wrap: wrap;
+}
+
+.menuNavegacion .anchorMenuNavegacion {
+  font-size: 2rem;
+  color: black;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 0.1rem 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+.menuNavegacion .anchorMenuNavegacion:hover {
+  cursor: pointer;
+  color: black;
+  background-color: #F5FF6A;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.2rem;
+  padding: 0.1rem 1rem;
+  text-decoration: none;
+}
+
+.menuNavegacion .header__a--active {
+  text-decoration: overline;
+}
 
 /* --------- Submenu de navegacion "Trips" --------- */
 .menuNavegacion li ul {
@@ -60,7 +79,8 @@ header {
   list-style: none;
   font-weight: bolder;
   text-transform: uppercase;
-  padding: 0.5rem 0 0 2rem; }
+  padding: 0.5rem 0 0 2rem;
+}
 
 .anchorSubMenuNavegacion {
   color: white;
@@ -68,10 +88,12 @@ header {
   font-weight: bold;
   font-size: 1.5rem;
   border-radius: 0.2rem;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .menuNavegacion li ul li {
-  margin: 0 0 0.2rem 0; }
+  margin: 0 0 0.2rem 0;
+}
 
 .anchorSubMenuNavegacion:hover {
   color: white;
@@ -81,93 +103,126 @@ header {
   border-style: solid;
   border-color: black;
   border-width: 0.2rem;
-  padding: 0 0.1rem; }
+  padding: 0 0.1rem;
+}
 
-.menuNavegacion li:hover > ul {
-  display: block; }
+.menuNavegacion li:hover>ul {
+  display: block;
+}
 
 /* --------- Footer (todas las paginas) --------- */
 footer {
   display: flex;
   justify-content: center;
-  flex-direction: column; }
-  footer div {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-    margin-top: 5rem; }
-  footer img {
-    width: 3.2rem;
-    height: 3.2rem; }
-  footer a:hover {
-    opacity: 0.8; }
-  footer span {
-    text-align: center;
-    font-size: medium;
-    margin-bottom: 5rem; }
+  flex-direction: column;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+footer img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}
+
+footer span {
+  text-align: center;
+  font-size: medium;
+  margin-bottom: 5rem;
+}
 
 .tz-gallery {
-  padding: 40px; }
-  .tz-gallery .lightbox img {
-    width: 100%;
-    margin-bottom: 30px;
-    transition: 0.2s ease-in-out;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); }
-    .tz-gallery .lightbox img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); }
-  .tz-gallery img {
-    border-radius: 4px; }
+  padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+  width: 100%;
+  margin-bottom: 30px;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.tz-gallery .lightbox img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tz-gallery img {
+  border-radius: 4px;
+}
 
 .baguetteBox-button {
-  background-color: transparent !important; }
+  background-color: transparent !important;
+}
 
 .container-fluid {
-  width: 70%; }
+  width: 70%;
+}
 
 /* --------- aboutme.html --------- */
 .mainQuiensoy {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
-  .mainQuiensoy h1 {
-    margin: 5rem;
-    font-size: 4rem;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    padding: 0.5rem; }
-  .mainQuiensoy div {
-    display: flex;
-    flex-direction: row; }
+  justify-content: center;
+}
+
+.mainQuiensoy h1 {
+  margin: 5rem;
+  font-size: 4rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.mainQuiensoy div {
+  display: flex;
+  flex-direction: row;
+}
 
 .fotoQuiensoy {
   margin: 10rem;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+}
 
 /* --------- contactme.html --------- */
 .mainContact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 7rem; }
-  .mainContact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 0.2rem;
-    border-color: black; }
-  .mainContact h1 {
-    margin: 4rem;
-    transition: 0.5s;
-    font-size: 4rem;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    padding: 0.5rem; }
-    .mainContact h1:hover {
-      font-size: 5rem; }
+  margin-top: 7rem;
+}
+
+.mainContact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.2rem;
+  border-color: black;
+}
+
+.mainContact h1 {
+  margin: 4rem;
+  transition: 0.5s;
+  font-size: 4rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.mainContact h1:hover {
+  font-size: 5rem;
+}
 
 .formFormatInput {
   border: 0.2rem;
@@ -177,10 +232,13 @@ footer {
   height: 3rem;
   margin: 0.5rem;
   padding-left: 0.5rem;
-  font-size: 1.5rem; }
-  .formFormatInput:focus {
-    transform: scale(1.02);
-    transition: 0.3s; }
+  font-size: 1.5rem;
+}
+
+.formFormatInput:focus {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
 
 .formFormatTextarea {
   border: 0.2rem;
@@ -191,27 +249,35 @@ footer {
   resize: none;
   padding-left: 0.5rem;
   padding-top: 0.5rem;
-  font-size: 1.5rem; }
-  .formFormatTextarea:focus {
-    transform: scale(1.02);
-    transition: 0.3s; }
+  font-size: 1.5rem;
+}
+
+.formFormatTextarea:focus {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
 
 .mainBoton {
   display: flex;
-  flex-direction: row; }
-  .mainBoton input {
-    text-transform: uppercase;
-    margin: 2rem 1rem 4rem 1rem;
-    background-color: black;
-    color: white;
-    padding: 1rem;
-    font-weight: bold;
-    width: 10rem;
-    cursor: pointer;
-    font-size: 1.5rem; }
-    .mainBoton input:hover {
-      transform: translate(0.1rem, 0.1rem);
-      opacity: 0.9; }
+  flex-direction: row;
+}
+
+.mainBoton input {
+  text-transform: uppercase;
+  margin: 2rem 1rem 4rem 1rem;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.mainBoton input:hover {
+  transform: translate(0.1rem, 0.1rem);
+  opacity: 0.9;
+}
 
 /* --------- formsent.html --------- */
 .mainFormSent {
@@ -219,349 +285,517 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 17rem;
-  font-size: 5rem; }
-  .mainFormSent a {
-    width: 15%;
-    margin-top: 5rem; }
-  .mainFormSent img {
-    transition: 0.3s; }
-    .mainFormSent img:hover {
-      transform: scale(1.2); }
+  font-size: 5rem;
+}
+
+.mainFormSent a {
+  width: 15%;
+  margin-top: 5rem;
+}
+
+.mainFormSent img {
+  transition: 0.3s;
+}
+
+.mainFormSent img:hover {
+  transform: scale(1.2);
+}
 
 /* --------- index.html --------- */
 .fotoPortada {
-  margin-top: 10rem; }
-  .fotoPortada img {
-    width: 100%;
-    animation: fotoPortada 2s; }
+  margin-top: 10rem;
+}
+
+.fotoPortada img {
+  width: 100%;
+  animation: fotoPortada 2s;
+}
 
 /* Animacion para fotos de portada */
 @keyframes fotoPortada {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
+
   10% {
-    opacity: 0.1; }
+    opacity: 0.1;
+  }
+
   20% {
-    opacity: 0.2; }
+    opacity: 0.2;
+  }
+
   30% {
-    opacity: 0.3; }
+    opacity: 0.3;
+  }
+
   40% {
-    opacity: 0.4; }
+    opacity: 0.4;
+  }
+
   50% {
-    opacity: 0.5; }
+    opacity: 0.5;
+  }
+
   60% {
-    opacity: 0.6; }
+    opacity: 0.6;
+  }
+
   70% {
-    opacity: 0.7; }
+    opacity: 0.7;
+  }
+
   80% {
-    opacity: 0.8; }
+    opacity: 0.8;
+  }
+
   90% {
-    opacity: 0.9; }
+    opacity: 0.9;
+  }
+
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 /* --------- projects.html --------- */
 .mainProjects {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 7rem; }
-  .mainProjects h1 {
-    margin: 2rem;
-    font-size: 4rem;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    padding: 0.5rem; }
+  margin-top: 7rem;
+}
+
+.mainProjects h1 {
+  margin: 2rem;
+  font-size: 4rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+}
 
 /* --------- Trips (nyc2019.html/mx2022.html/eu2018.html) --------- */
 .mainTrips {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 7rem; }
-  .mainTrips h1 {
-    margin: 5rem;
-    font-size: 4rem;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    padding: 0.5rem; }
+  margin-top: 7rem;
+}
+
+.mainTrips h1 {
+  margin: 5rem;
+  font-size: 4rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+}
 
 .mainShopping {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 7rem; }
-  .mainShopping h1 {
-    margin: 5rem;
-    font-size: 4rem;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    padding: 0.5rem; }
-  .mainShopping p {
-    font-size: 3rem;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    padding: 0.5rem; }
+  margin-top: 7rem;
+}
+
+.mainShopping h1 {
+  margin: 5rem;
+  font-size: 4rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.mainShopping p {
+  font-size: 3rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+}
 
 .card-title {
-  font-weight: bolder; }
+  font-weight: bolder;
+}
 
 .card {
   margin: 2rem;
   border-color: black;
-  border-width: 0.2rem; }
+  border-width: 0.2rem;
+}
 
 .card-img-top {
-  padding: 1rem; }
+  padding: 1rem;
+}
 
 .totalAmount-display {
   display: flex;
-  padding: 1rem; }
+  padding: 1rem;
+}
 
 .cartDisplay {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .totalAmount {
   font-size: 2rem;
   background-color: black;
   color: white;
   font-weight: bold;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+}
 
 .navbar-toggler {
   background-color: black;
   display: flex;
   align-items: center;
   border-radius: 0;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+}
 
 .bi-cart {
-  color: white; }
+  color: white;
+}
 
 .offcanvas-title {
   font-size: 3rem;
   background-color: black;
   color: white;
   font-weight: bold;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+}
 
 .cartText {
   font-size: 3rem;
   background-color: black;
   color: white;
   font-weight: bold;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+}
 
 .totalCart {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .btn-dark:hover {
   color: white;
-  font-weight: bolder; }
+  font-weight: bolder;
+}
 
 .btn-dark:focus {
   color: #f2fa70;
-  font-weight: bolder; }
+  font-weight: bolder;
+}
 
 .navbar {
   border-width: 0;
-  border-radius: 0; }
+  border-radius: 0;
+}
 
 .toastify {
   border-style: ridge;
   border-color: #f2fa70;
   border-width: 0.2rem;
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 /* --------- Contenido Responsive --------- */
 /* --------- (Tablet) --------- */
 @media screen and (max-width: 1024px) and (min-width: 650px) {
+
   /* Header */
   header {
-    flex-direction: column; }
-    header .logo {
-      margin: 0; }
-      header .logo img {
-        width: 20rem;
-        margin: 0 auto; }
+    flex-direction: column;
+  }
+
+  header .logo {
+    margin: 0;
+  }
+
+  header .logo img {
+    width: 20rem;
+    margin: 0 auto;
+  }
+
   /* Menu navegacion */
   .menuNavegacion {
     margin-top: 5rem;
-    padding: 0; }
-    .menuNavegacion .anchorMenuNavegacion {
-      background-color: black;
-      color: white;
-      margin-right: 0.5rem;
-      border-radius: 0.5rem;
-      padding: 0.1rem 1rem;
-      text-decoration: none; }
-      .menuNavegacion .anchorMenuNavegacion:hover {
-        color: white;
-        padding: 0.1rem 1rem;
-        border-width: 0;
-        background-color: black; }
+    padding: 0;
+  }
+
+  .menuNavegacion .anchorMenuNavegacion {
+    background-color: black;
+    color: white;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.1rem 1rem;
+    text-decoration: none;
+  }
+
+  .menuNavegacion .anchorMenuNavegacion:hover {
+    color: white;
+    padding: 0.1rem 1rem;
+    border-width: 0;
+    background-color: black;
+  }
+
   /* aboutme.html */
   .mainQuiensoy {
-    flex-direction: column; }
-    .mainQuiensoy div {
-      flex-direction: column; }
-    .mainQuiensoy h1 {
-      margin-top: 7rem;
-      font-size: 3rem; }
+    flex-direction: column;
+  }
+
+  .mainQuiensoy div {
+    flex-direction: column;
+  }
+
+  .mainQuiensoy h1 {
+    margin-top: 7rem;
+    font-size: 3rem;
+  }
+
   .fotoQuiensoy {
     width: 50%;
-    margin: 0 auto; }
+    margin: 0 auto;
+  }
+
   .parrafoQuiensoy {
     font-size: 2rem;
     width: auto;
     margin-bottom: 2rem;
-    margin-top: 6rem; }
+    margin-top: 6rem;
+  }
+
   /* trips */
   .mainTrips {
-    margin: 5.5rem 0 2rem 0; }
-    .mainTrips h1 {
-      margin-bottom: 3rem;
-      margin-top: 1rem;
-      font-size: 3rem; }
+    margin: 5.5rem 0 2rem 0;
+  }
+
+  .mainTrips h1 {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+
   /* projects.html */
   .mainProjects {
-    margin: 5.5rem 0 2rem 0; }
-    .mainProjects h1 {
-      margin-bottom: 3rem;
-      margin-top: 1rem;
-      font-size: 3rem; }
+    margin: 5.5rem 0 2rem 0;
+  }
+
+  .mainProjects h1 {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+
   /* contactme.html */
   .mainContact {
-    margin: 0; }
-    .mainContact h1 {
-      font-size: 3rem; }
+    margin: 0;
+  }
+
+  .mainContact h1 {
+    font-size: 3rem;
+  }
+
   /* formsent.html */
   .mainFormSent {
-    margin-top: 5rem; }
-    .mainFormSent h1 {
-      font-size: 3rem;
-      margin: 3rem 8rem 2rem 8rem;
-      font-weight: bolder;
-      text-align: center; }
+    margin-top: 5rem;
+  }
+
+  .mainFormSent h1 {
+    font-size: 3rem;
+    margin: 3rem 8rem 2rem 8rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+
   /* Galleries */
   .container-fluid {
-    width: 100%; }
-    .container-fluid .tz-gallery {
-      padding-top: 1rem; }
-      .container-fluid .tz-gallery .lightbox img {
-        transition: none; }
-        .container-fluid .tz-gallery .lightbox img:hover {
-          transform: none;
-          box-shadow: none; }
+    width: 100%;
+  }
+
+  .container-fluid .tz-gallery {
+    padding-top: 1rem;
+  }
+
+  .container-fluid .tz-gallery .lightbox img {
+    transition: none;
+  }
+
+  .container-fluid .tz-gallery .lightbox img:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
   /* Footer */
   .footerPortada {
-    margin-top: 60rem; } }
+    margin-top: 60rem;
+  }
+}
 
 /* --------- (Mobile) --------- */
 @media (max-width: 550px) {
+
   /* Header */
   header {
     justify-content: center;
-    flex-direction: column; }
-    header .logo {
-      margin: 0; }
-      header .logo img {
-        width: 15rem;
-        margin: 0; }
+    flex-direction: column;
+  }
+
+  header .logo {
+    margin: 0;
+  }
+
+  header .logo img {
+    width: 15rem;
+    margin: 0;
+  }
+
   /* Menu navegacion */
   .menuNavegacion {
     margin-top: 3rem;
     margin-bottom: 1rem;
-    padding: 0; }
-    .menuNavegacion .anchorMenuNavegacion {
-      font-size: 1.2rem;
-      margin: 0.2rem;
-      background-color: black;
-      color: white;
-      border-radius: 0.5rem;
-      padding: 0.5rem 0.2rem;
-      text-decoration: none; }
-      .menuNavegacion .anchorMenuNavegacion:hover {
-        color: white;
-        padding: 0.5rem 0.2rem;
-        border-width: 0;
-        background-color: black; }
-    .menuNavegacion .anchorSubMenuNavegacion {
-      font-size: 1rem; }
+    padding: 0;
+  }
+
+  .menuNavegacion .anchorMenuNavegacion {
+    font-size: 1.2rem;
+    margin: 0.2rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.2rem;
+    text-decoration: none;
+  }
+
+  .menuNavegacion .anchorMenuNavegacion:hover {
+    color: white;
+    padding: 0.5rem 0.2rem;
+    border-width: 0;
+    background-color: black;
+  }
+
+  .menuNavegacion .anchorSubMenuNavegacion {
+    font-size: 1rem;
+  }
+
   /* index.html */
   .fotoPortada {
     display: flex;
     margin-top: 5rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+  }
+
   /* aboutme.html */
   .fotoQuiensoy {
     margin-top: 4rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+  }
+
   .parrafoQuiensoy {
     width: auto;
     font-size: 2rem;
-    margin: 3rem 10rem; }
+    margin: 3rem 10rem;
+  }
+
   .mainQuiensoy {
-    flex-direction: column; }
-    .mainQuiensoy h1 {
-      font-size: 2rem;
-      margin-top: 5rem;
-      margin-bottom: 1rem; }
-    .mainQuiensoy div {
-      flex-direction: column; }
+    flex-direction: column;
+  }
+
+  .mainQuiensoy h1 {
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .mainQuiensoy div {
+    flex-direction: column;
+  }
+
   /* Trips */
   .mainTrips {
-    margin: 3.5rem; }
-    .mainTrips h1 {
-      font-size: 2rem;
-      margin-top: 1rem;
-      margin-bottom: 2rem; }
+    margin: 3.5rem;
+  }
+
+  .mainTrips h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
   /* projects.html */
   .mainProjects {
-    margin-top: 2rem; }
-    .mainProjects h1 {
-      font-size: 2rem;
-      margin-top: 3rem; }
+    margin-top: 2rem;
+  }
+
+  .mainProjects h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
   /* contact.html */
   .mainContact {
-    margin: 1rem 7rem; }
-    .mainContact h1 {
-      font-size: 2rem;
-      margin: 2rem; }
-      .mainContact h1:hover {
-        font-size: 2.5rem; }
-    .mainContact form textarea {
-      height: 20rem; }
+    margin: 1rem 7rem;
+  }
+
+  .mainContact h1 {
+    font-size: 2rem;
+    margin: 2rem;
+  }
+
+  .mainContact h1:hover {
+    font-size: 2.5rem;
+  }
+
+  .mainContact form textarea {
+    height: 20rem;
+  }
+
   /* formsent.html */
   .mainFormSent {
     margin-top: 2rem;
-    margin-bottom: 2rem; }
-    .mainFormSent h1 {
-      font-size: 2rem;
-      margin: 3rem 8rem 2rem 8rem;
-      text-align: center; }
-    .mainFormSent a {
-      margin: 1rem; }
+    margin-bottom: 2rem;
+  }
+
+  .mainFormSent h1 {
+    font-size: 2rem;
+    margin: 3rem 8rem 2rem 8rem;
+    text-align: center;
+  }
+
+  .mainFormSent a {
+    margin: 1rem;
+  }
+
   /* Galleries */
   .container-fluid {
     width: 100%;
     margin: 0;
-    padding: 0; }
-    .container-fluid .tz-gallery-trips {
-      padding: 1rem 0; }
-    .container-fluid .tz-gallery {
-      padding-top: 1rem; }
-      .container-fluid .tz-gallery .lightbox img {
-        transition: none; }
-        .container-fluid .tz-gallery .lightbox img:hover {
-          transform: none;
-          box-shadow: none; }
+    padding: 0;
+  }
+
+  .container-fluid .tz-gallery-trips {
+    padding: 1rem 0;
+  }
+
+  .container-fluid .tz-gallery {
+    padding-top: 1rem;
+  }
+
+  .container-fluid .tz-gallery .lightbox img {
+    transition: none;
+  }
+
+  .container-fluid .tz-gallery .lightbox img:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
   /* Footer */
   footer div {
-    margin-top: 2rem; } }
+    margin-top: 2rem;
+  }
+}
